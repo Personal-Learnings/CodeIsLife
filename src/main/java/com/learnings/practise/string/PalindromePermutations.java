@@ -1,4 +1,4 @@
-package com.learnings.practise;
+package com.learnings.practise.string;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +35,7 @@ public class PalindromePermutations {
 
     public static void main(String[] args) {
         PalindromePermutations palindromePermutations = new PalindromePermutations();
+
         String inputString = "DAMMA";
         System.out.println("Input: " + inputString + " Output: " + palindromePermutations.isPalindromePermutation_BigO_N_Extended_ASCII(inputString));
 

@@ -1,4 +1,4 @@
-package com.learnings.practise;
+package com.learnings.practise.string;
 
 public class URLify {
 
