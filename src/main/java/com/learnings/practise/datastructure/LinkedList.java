@@ -19,6 +19,36 @@ public class LinkedList<T> {
         ++size;
     }
 
+    private void add(T data, int index) throws Exception {
+        if(index > size || index < 0) {
+            throw new Exception("Cannot Insert at index " + index);
+        } else if(index == 0) {
+            Node<T> newNode = new Node<>();
+            newNode.setData(data);
+            newNode.setReference(headNode);
+
+            headNode = newNode;
+            size++;
+        } else {
+            Node<T> currentNode = headNode.getReference();
+            Node<T> previousNode = headNode;
+
+            int currentIndex = 1;
+            while(currentNode != null) {
+                if(currentIndex == index) {
+                    Node<T> newNode = new Node<>();
+                    newNode.setData(data);
+                    newNode.setReference(currentNode);
+
+                    previousNode.setReference(newNode);
+                    size++;
+                }
+                currentNode = currentNode.getReference();
+                ++currentIndex;
+            }
+        }
+    }
+
     private void remove(T data) {
         Node<T> currentNode = headNode;
         Node<T> previousNode = headNode;
@@ -91,7 +121,7 @@ public class LinkedList<T> {
         return stringBuilder.toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(1);
         linkedList.add(2);
@@ -127,6 +157,20 @@ public class LinkedList<T> {
         System.out.println("Finding 2            : " + linkedList.get(2).getData());
         System.out.println("Finding 4            : " + linkedList.get(4));
 
+        linkedList.add(6, 0);
+        System.out.println("After Adding 6 at 0  : " + linkedList);
+
+        try {
+            linkedList.add(3, 5);
+        } catch (Exception e) {
+            System.out.println("After Adding 3 at 5  : " + e.getMessage());
+        }
+
+        linkedList.add(4, 1);
+        System.out.println("After Adding 4 at 1  : " + linkedList);
+
+        linkedList.add(7, 3);
+        System.out.println("After Adding 7 at 3  : " + linkedList);
     }
 }
 

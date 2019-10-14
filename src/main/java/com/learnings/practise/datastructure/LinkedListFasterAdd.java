@@ -7,15 +7,15 @@ public class LinkedListFasterAdd<T> {
     private int size;
 
     private void add(T data) {
-        if(isEmpty()) {
+        if (isEmpty()) {
             headNode = new Node<>();
             headNode.setData(data);
             tailNode = headNode;
         } else {
             Node<T> newNode = new Node<>();
-
             newNode.setData(data);
             tailNode.setReference(newNode);
+            tailNode = newNode;
         }
         ++size;
     }
