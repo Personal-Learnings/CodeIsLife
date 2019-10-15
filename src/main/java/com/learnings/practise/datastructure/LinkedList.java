@@ -164,6 +164,13 @@ public class LinkedList<T> {
         }
     }
 
+    private void displayReverse(Node<T> currentNode) {
+        if(currentNode != null) {
+            displayReverse(currentNode.getReference());
+            System.out.print(currentNode.getData() + ", ");
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(1);
@@ -227,11 +234,11 @@ public class LinkedList<T> {
         linkedList.remove(2);
         System.out.println("After Removing 2     : " + linkedList);
 
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
         linkedList.add(4);
-        System.out.println("After Adding 1 2 3 4 : " + linkedList);
+        linkedList.add(3);
+        linkedList.add(2);
+        linkedList.add(1);
+        System.out.println("After Adding 4 3 2 1 : " + linkedList);
 
         linkedList.flip();
         System.out.println("After Flipping       : " + linkedList);
@@ -241,8 +248,9 @@ public class LinkedList<T> {
         linkedList.add(7);
         System.out.println("After Adding 5 6 7   : " + linkedList);
 
-        linkedList.remove(1);
-        System.out.println("After Removing 1     : " + linkedList);
+        System.out.print("Display Reverse Using Recursion:: Data: [");
+        linkedList.displayReverse(linkedList.headNode);
+        System.out.print("]");
     }
 }
 
