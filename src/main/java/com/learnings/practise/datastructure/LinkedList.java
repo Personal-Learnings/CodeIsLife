@@ -155,10 +155,10 @@ public class LinkedList<T> {
             Node<T> currentNode = headNode;
 
             while(currentNode != null) {
-                Node<T> temp = currentNode.getReference();
+                Node<T> nextNode = currentNode.getReference();
                 currentNode.setReference(previousNode);
                 previousNode = currentNode;
-                currentNode = temp;
+                currentNode = nextNode;
             }
             headNode = previousNode;
         }
