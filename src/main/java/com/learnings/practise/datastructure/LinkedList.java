@@ -23,30 +23,58 @@ public class LinkedList<T> {
         if(index > size || index < 0) {
             throw new Exception("Cannot Insert at index " + index);
         } else if(index == 0) {
-            Node<T> newNode = new Node<>();
-            newNode.setData(data);
-            newNode.setReference(headNode);
-
-            headNode = newNode;
-            size++;
+            insertAtHead(data);
+        } else if(index == getSize()) {
+            insertAtTail(data);
         } else {
-            Node<T> currentNode = headNode.getReference();
-            Node<T> previousNode = headNode;
-
-            int currentIndex = 1;
-            while(currentNode != null) {
-                if(currentIndex == index) {
-                    Node<T> newNode = new Node<>();
-                    newNode.setData(data);
-                    newNode.setReference(currentNode);
-
-                    previousNode.setReference(newNode);
-                    size++;
-                }
-                currentNode = currentNode.getReference();
-                ++currentIndex;
-            }
+            insertAtMiddle(data, index);
         }
+    }
+
+    private void insertAtTail(T data) {
+        Node<T> currentNode = headNode.getReference();
+        int currentIndex = 1;
+        while (currentIndex <= getSize()) {
+
+            if(currentNode.getReference() == null) {
+                Node<T> newNode = new Node<>();
+                newNode.setData(data);
+                currentNode.setReference(newNode);
+                size++;
+                break;
+            } else {
+                currentNode = currentNode.getReference();
+            }
+            ++currentIndex;
+        }
+    }
+
+    private void insertAtMiddle(T data, int index) {
+        Node<T> currentNode = headNode.getReference();
+        Node<T> previousNode = headNode;
+
+        int currentIndex = 1;
+        while(currentNode != null) {
+            if(currentIndex == index) {
+                Node<T> newNode = new Node<>();
+                newNode.setData(data);
+                newNode.setReference(currentNode);
+
+                previousNode.setReference(newNode);
+                size++;
+            }
+            currentNode = currentNode.getReference();
+            ++currentIndex;
+        }
+    }
+
+    private void insertAtHead(T data) {
+        Node<T> newNode = new Node<>();
+        newNode.setData(data);
+        newNode.setReference(headNode);
+
+        headNode = newNode;
+        size++;
     }
 
     private void remove(T data) {
@@ -121,6 +149,21 @@ public class LinkedList<T> {
         return stringBuilder.toString();
     }
 
+    private void flip() {
+        if(!(getSize() <= 1)) {
+            Node<T> previousNode = null;
+            Node<T> currentNode = headNode;
+
+            while(currentNode != null) {
+                Node<T> temp = currentNode.getReference();
+                currentNode.setReference(previousNode);
+                previousNode = currentNode;
+                currentNode = temp;
+            }
+            headNode = previousNode;
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(1);
@@ -171,6 +214,35 @@ public class LinkedList<T> {
 
         linkedList.add(7, 3);
         System.out.println("After Adding 7 at 3  : " + linkedList);
+
+        linkedList.remove(4);
+        System.out.println("After Removing 4     : " + linkedList);
+
+        linkedList.remove(7);
+        System.out.println("After Removing 7     : " + linkedList);
+
+        linkedList.remove(6);
+        System.out.println("After Removing 6     : " + linkedList);
+
+        linkedList.remove(2);
+        System.out.println("After Removing 2     : " + linkedList);
+
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        System.out.println("After Adding 1 2 3 4 : " + linkedList);
+
+        linkedList.flip();
+        System.out.println("After Flipping       : " + linkedList);
+
+        linkedList.add(5);
+        linkedList.add(6);
+        linkedList.add(7);
+        System.out.println("After Adding 5 6 7   : " + linkedList);
+
+        linkedList.remove(1);
+        System.out.println("After Removing 1     : " + linkedList);
     }
 }
 
