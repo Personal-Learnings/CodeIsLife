@@ -99,15 +99,11 @@ public class LinkedList<T> {
 
     private Node<T> get(T data) {
         Node<T> currentNode = headNode;
-        if(headNode.getData().equals(data)) {
-            return headNode;
-        } else {
-            while(currentNode.getReference() != null) {
-                if(currentNode.getData().equals(data)) {
-                    return currentNode;
-                }
-                currentNode = currentNode.getReference();
+        while(currentNode != null) {
+            if(currentNode.getData().equals(data)) {
+                return currentNode;
             }
+            currentNode = currentNode.getReference();
         }
         return null;
     }
@@ -204,7 +200,8 @@ public class LinkedList<T> {
         linkedList.remove(4);
         System.out.println("After Removing 4     : " + linkedList);
 
-        System.out.println("Finding 2            : " + linkedList.get(2).getData());
+        Node<Integer> nodeFound = linkedList.get(2);
+        System.out.println("Finding 2            : " + (null != nodeFound ? nodeFound.getData() : null));
         System.out.println("Finding 4            : " + linkedList.get(4));
 
         linkedList.add(6, 0);
@@ -252,25 +249,25 @@ public class LinkedList<T> {
         linkedList.displayReverse(linkedList.headNode);
         System.out.print("]");
     }
-}
 
-class Node<T> {
-    private T data;
-    private Node<T> reference;
+    static class Node<T> {
+        private T data;
+        private Node<T> reference;
 
-    public T getData() {
-        return data;
-    }
+        public T getData() {
+            return data;
+        }
 
-    public void setData(T data) {
-        this.data = data;
-    }
+        public void setData(T data) {
+            this.data = data;
+        }
 
-    Node<T> getReference() {
-        return reference;
-    }
+        Node<T> getReference() {
+            return reference;
+        }
 
-    void setReference(Node<T> reference) {
-        this.reference = reference;
+        void setReference(Node<T> reference) {
+            this.reference = reference;
+        }
     }
 }

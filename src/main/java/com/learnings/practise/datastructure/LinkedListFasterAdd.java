@@ -120,4 +120,25 @@ public class LinkedListFasterAdd<T> {
         System.out.println("Finding 2            : " + linkedList.get(2).getData());
         System.out.println("Finding 4            : " + linkedList.get(4));
     }
+
+    static class Node<T> {
+        private T data;
+        private Node<T> reference;
+
+        public T getData() {
+            return data;
+        }
+
+        public void setData(T data) {
+            this.data = data;
+        }
+
+        Node<T> getReference() {
+            return reference;
+        }
+
+        void setReference(Node<T> reference) {
+            this.reference = reference;
+        }
+    }
 }
