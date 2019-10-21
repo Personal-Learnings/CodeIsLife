@@ -54,5 +54,11 @@ public class ParenthesisValidation {
 
         inputString = "({[A + B}])";
         System.out.println(inputString + ": " + parenthesisValidation.verify(inputString));
+
+        inputString = "[A + B]})";
+        System.out.println(inputString + ": " + parenthesisValidation.verify(inputString));
+
+        inputString = "(A) * (B)";
+        System.out.println(inputString + ": " + parenthesisValidation.verify(inputString));
     }
 }
