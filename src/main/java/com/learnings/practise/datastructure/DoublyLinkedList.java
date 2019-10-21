@@ -144,7 +144,7 @@ public class DoublyLinkedList<T> {
 
     @Override
     public String toString() {
-        Node currentNode = headNode;
+        Node<T> currentNode = headNode;
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Size: ");
         stringBuilder.append(getSize());

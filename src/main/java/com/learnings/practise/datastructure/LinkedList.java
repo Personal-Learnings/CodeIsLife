@@ -126,6 +126,65 @@ public class LinkedList<T> {
         return getSize() == 0;
     }
 
+    private void flip() {
+        if(!(getSize() <= 1)) {
+            Node<T> previousNode = null;
+            Node<T> currentNode = headNode;
+
+            while(currentNode != null) {
+                Node<T> nextNode = currentNode.getReference();
+                currentNode.setReference(previousNode);
+                previousNode = currentNode;
+                currentNode = nextNode;
+            }
+            headNode = previousNode;
+        }
+    }
+
+    private void flipUsingStack_fasterImplementation() throws Exception {
+        StackWithLinkedList<Node<T>> stack = new StackWithLinkedList<>();
+        Node<T> currentNode = headNode;
+        Node<T> previousNode = null;
+
+        while(currentNode != null) {
+            Node<T> newNode = new Node<>();
+            newNode.setData(currentNode.getData());
+            newNode.setReference(previousNode);
+
+            stack.push(newNode);
+
+            previousNode = newNode;
+            currentNode = currentNode.getReference();
+        }
+        headNode = stack.pop();
+    }
+
+    private void flipUsingStack_regularImplementation() throws Exception {
+        StackWithLinkedList<Node<T>> stack = new StackWithLinkedList<>();
+        Node<T> currentNode = headNode;
+
+        while(currentNode != null) {
+            stack.push(currentNode);
+            currentNode = currentNode.getReference();
+        }
+
+        headNode = stack.top();
+        Node<T> flippedNode = headNode;
+
+        while(!stack.isEmpty()) {
+            flippedNode.setReference(stack.pop());
+            flippedNode = flippedNode.getReference();
+        }
+        flippedNode.setReference(null);
+    }
+
+    private void displayReverse(Node<T> currentNode) {
+        if(currentNode != null) {
+            displayReverse(currentNode.getReference());
+            System.out.print(currentNode.getData() + ", ");
+        }
+    }
+
     @Override
     public String toString() {
         Node currentNode = headNode;
@@ -143,28 +202,6 @@ public class LinkedList<T> {
         }
         stringBuilder.append("] ");
         return stringBuilder.toString();
-    }
-
-    private void flip() {
-        if(!(getSize() <= 1)) {
-            Node<T> previousNode = null;
-            Node<T> currentNode = headNode;
-
-            while(currentNode != null) {
-                Node<T> nextNode = currentNode.getReference();
-                currentNode.setReference(previousNode);
-                previousNode = currentNode;
-                currentNode = nextNode;
-            }
-            headNode = previousNode;
-        }
-    }
-
-    private void displayReverse(Node<T> currentNode) {
-        if(currentNode != null) {
-            displayReverse(currentNode.getReference());
-            System.out.print(currentNode.getData() + ", ");
-        }
     }
 
     public static void main(String[] args) throws Exception {
@@ -239,6 +276,12 @@ public class LinkedList<T> {
 
         linkedList.flip();
         System.out.println("After Flipping       : " + linkedList);
+
+        linkedList.flipUsingStack_fasterImplementation();
+        System.out.println("Flipping w/ StackFast: " + linkedList);
+
+        linkedList.flipUsingStack_regularImplementation();
+        System.out.println("Flipping w/ StackReg.: " + linkedList);
 
         linkedList.add(5);
         linkedList.add(6);
