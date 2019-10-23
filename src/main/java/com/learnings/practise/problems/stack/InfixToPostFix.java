@@ -26,34 +26,27 @@ public class InfixToPostFix {
         for(Character currentChar : inputCharArray) {
             if(Character.isAlphabetic(currentChar) || Character.isDigit(currentChar)) {
                 postFixExpression.append(currentChar);
+
             } else if(Arrays.asList(ALLOWED_OPENING_PARENTHESIS).contains(currentChar)) {
                 stack.push(currentChar);
-            } else if(allowedOperatorsMap.containsKey(currentChar)) {
-                if(allowedOperatorsMap.containsKey(stack.top())) {
 
-                    while(!stack.isEmpty() && allowedOperatorsMap.containsKey(stack.top())) {
-                        if(isCurrentCharacterHasLowerPrecedenceThanOrEqualToStackTopCharacter(stack.top(), currentChar)) {
-                            postFixExpression.append(stack.pop());
-                        } else {
-                            stack.push(currentChar);
-                            break;
-                        }
-                    }
-                    if(stack.top() != currentChar) {
-                        stack.push(currentChar);
-                    }
-                } else {
-                    stack.push(currentChar);
+            } else if(allowedOperatorsMap.containsKey(currentChar)) {
+                while(allowedOperatorsMap.containsKey(stack.top()) &&
+                        isCurrentCharacterHasLowerPrecedenceThanOrEqualToStackTopCharacter(stack.top(), currentChar)) {
+                    postFixExpression.append(stack.pop());
                 }
+                //Pushing the Current Operator after all the lower/equal precedence operators are Popped out from stack.
+                stack.push(currentChar);
+
             } else if(Arrays.asList(ALLOWED_CLOSING_PARENTHESIS).contains(currentChar)) {
                 while (!Arrays.asList(ALLOWED_OPENING_PARENTHESIS).contains(stack.top())) {
                     postFixExpression.append(stack.pop());
                 }
-                if(Arrays.asList(ALLOWED_OPENING_PARENTHESIS).contains(stack.top())) {
-                    stack.pop();
-                }
+                //Popping out the last Opened Parenthesis
+                stack.pop();
             }
         }
+        //Popping out the remaining Operators on Stack
         while (!stack.isEmpty()) {
             postFixExpression.append(stack.pop());
         }
@@ -73,10 +66,16 @@ public class InfixToPostFix {
         expression = "A+B*C-D*E";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
 
+        expression = "A*(B+C)";
+        System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
+
         expression = "((A+B)*C-D)*E";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
 
         expression = "(A*(B+(C/D)))";
+        System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
+
+        expression = "A+B+C+D*(E-F/G)";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
     }
 }
