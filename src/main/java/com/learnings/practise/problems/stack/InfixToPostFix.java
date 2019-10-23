@@ -31,8 +31,8 @@ public class InfixToPostFix {
             } else if(allowedOperatorsMap.containsKey(currentChar)) {
                 if(allowedOperatorsMap.containsKey(stack.top())) {
 
-                    while(allowedOperatorsMap.containsKey(stack.top())) {
-                        if(isCurrentCharacterHasLowerPrecedenceThanStackTopCharacter(stack.top(), currentChar)) {
+                    while(!stack.isEmpty() && allowedOperatorsMap.containsKey(stack.top())) {
+                        if(isCurrentCharacterHasLowerPrecedenceThanOrEqualToStackTopCharacter(stack.top(), currentChar)) {
                             postFixExpression.append(stack.pop());
                         } else {
                             stack.push(currentChar);
@@ -60,20 +60,23 @@ public class InfixToPostFix {
         return postFixExpression.toString();
     }
 
-    private boolean isCurrentCharacterHasLowerPrecedenceThanStackTopCharacter(Character stackTopCharacter, Character currentCharacter) {
-        return allowedOperatorsMap.get(currentCharacter) < allowedOperatorsMap.get(stackTopCharacter);
+    private boolean isCurrentCharacterHasLowerPrecedenceThanOrEqualToStackTopCharacter(Character stackTopCharacter, Character currentCharacter) {
+        return allowedOperatorsMap.get(currentCharacter) <= allowedOperatorsMap.get(stackTopCharacter);
     }
 
     public static void main(String[] args) throws Exception {
         InfixToPostFix infixToPostFix = new InfixToPostFix();
 
-        String expression = "A+B*C";
+        String expression = "A+B+C*D";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
 
         expression = "A+B*C-D*E";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
 
         expression = "((A+B)*C-D)*E";
+        System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
+
+        expression = "(A*(B+(C/D)))";
         System.out.println("Infix Expression: " + expression + " ::: Post Fix Expression: " + infixToPostFix.infixToPostFix(expression));
     }
 }
