@@ -11,7 +11,7 @@ public class ParenthesisValidation {
     private final List<Character> ALLOWED_PARENTHESIS = Arrays.asList(ALLOWED_PARENTHESIS_ARRAY);
 
     private boolean verify(String snippet) throws Exception {
-        Stack stack = new Stack();
+        Stack<Character> stack = new Stack<>();
         char[] inputCharArray = snippet.toCharArray();
         for(char c : inputCharArray) {
             if(ALLOWED_PARENTHESIS.contains(c)) {

@@ -1,11 +1,11 @@
 package com.learnings.practise.datastructure;
 
-public class Stack {
+public class Stack<T> {
 
     private Object [] data = new Object[4];
     private int size;
 
-    public void push(Object element) {
+    public void push(T element) {
         if(getSize() < data.length) {
             data[getSize()] = element;
             ++size;
@@ -22,10 +22,11 @@ public class Stack {
         }
     }
 
-    public Object pop() throws Exception {
-        Object topElement = null;
+    @SuppressWarnings("unchecked")
+    public T pop() throws Exception {
+        T topElement;
         if(getSize() > 0) {
-            topElement = data[getSize() - 1];
+            topElement = (T) data[getSize() - 1];
             data[getSize() - 1] = null;
             --size;
         } else {
@@ -34,8 +35,9 @@ public class Stack {
         return topElement;
     }
 
-    public Object top() {
-        return isEmpty() ? null : data[getSize() - 1];
+    @SuppressWarnings("unchecked")
+    public T top() {
+        return isEmpty() ? null : (T) data[getSize() - 1];
     }
 
     public boolean isEmpty() {
@@ -60,7 +62,7 @@ public class Stack {
     }
 
     public static void main(String[] args) throws Exception {
-        Stack stack = new Stack();
+        Stack<Integer> stack = new Stack<>();
 
         stack.push(1);
         stack.push(2);
