@@ -2,33 +2,37 @@ package com.learnings.practise.datastructure;
 
 public class QueueWithLinkedList<T> {
 
-    private Node<T> headNode;
-    private Node<T> tailNode;
+    private Node<T> front;
+    private Node<T> rear;
     private int size;
 
     private void enqueue(T data) {
         if(isEmpty()) {
-            headNode = new Node<>();
-            headNode.setData(data);
-            tailNode = headNode;
+            front = new Node<>();
+            front.setData(data);
+            rear = front;
         } else {
             Node<T> newNode = new Node<>();
             newNode.setData(data);
-            tailNode.setNextNode(newNode);
-            tailNode = newNode;
+            rear.setNextNode(newNode);
+            rear = newNode;
         }
         ++size;
     }
 
-    private T dequeue() {
-        T data = headNode.getData();
-        headNode = headNode.getNextNode();
-        --size;
-        return data;
+    private T dequeue() throws Exception {
+        if(isEmpty()) {
+            throw new Exception("Queue is Empty");
+        } else {
+            T data = front.getData();
+            front = front.getNextNode();
+            --size;
+            return data;
+        }
     }
 
     private T peek() {
-        return isEmpty() ? null : headNode.getData();
+        return isEmpty() ? null : front.getData();
     }
 
     private boolean isEmpty() {
@@ -42,7 +46,7 @@ public class QueueWithLinkedList<T> {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        Node<T> currentNode = headNode;
+        Node<T> currentNode = front;
         while(null != currentNode) {
             stringBuilder.append("|");
             stringBuilder.append(currentNode.getData());
@@ -52,7 +56,7 @@ public class QueueWithLinkedList<T> {
         return stringBuilder.toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         QueueWithLinkedList<Integer> queue = new QueueWithLinkedList<>();
         queue.enqueue(1);
         System.out.println("Enqueue 1 to Queue  : " + queue);
@@ -66,17 +70,61 @@ public class QueueWithLinkedList<T> {
         queue.dequeue();
         System.out.println("Dequeue from Queue  : " + queue);
 
-        queue.dequeue();
-        System.out.println("Dequeue from Queue  : " + queue);
-
         queue.enqueue(4);
         System.out.println("Enqueue 4 to Queue  : " + queue);
 
+        queue.enqueue(5);
+        System.out.println("Enqueue 5 to Queue  : " + queue);
+
+        queue.enqueue(6);
+        System.out.println("Enqueue 6 to Queue  : " + queue);
+
+        queue.enqueue(7);
+        System.out.println("Enqueue 7 to Queue  : " + queue);
+
         queue.dequeue();
         System.out.println("Dequeue from Queue  : " + queue);
 
-        queue.enqueue(5);
-        System.out.println("Enqueue 5 to Queue  : " + queue);
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.enqueue(8);
+        System.out.println("Enqueue 8 to Queue  : " + queue);
+
+        queue.enqueue(9);
+        System.out.println("Enqueue 9 to Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.enqueue(10);
+        System.out.println("Enqueue 10 to Queue : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        System.out.println("Peek from Queue     : |" + queue.peek() + "|");
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        try{
+            queue.dequeue();
+        } catch (Exception e) {
+            System.out.println("Dequeue from Queue  : " + e.getMessage());
+        }
     }
 
     static class Node<T> {

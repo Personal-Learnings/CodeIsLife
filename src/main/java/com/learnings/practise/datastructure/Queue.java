@@ -11,7 +11,7 @@ public class Queue<T> {
         if(isFull()) {
             Object [] newArray = new Object[data.length * 2];
             int j = 0;
-            for(int i = front; i < getSize(); i++, j++) {
+            for(int i = front; i <= getSize(); i++, j++) {
                 newArray[j] = data[i % data.length];
             }
             data = newArray;
@@ -118,18 +118,21 @@ public class Queue<T> {
         queue.dequeue();
         System.out.println("Dequeue from Queue  : " + queue);
 
+        queue.enqueue(10);
+        System.out.println("Enqueue 10 to Queue : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        System.out.println("Peek from Queue     : |" + queue.peek() + "|");
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
         try{
             queue.dequeue();
         } catch (Exception e) {
             System.out.println("Dequeue from Queue  : " + e.getMessage());
         }
-
-        queue.enqueue(10);
-        System.out.println("Enqueue 10 to Queue  : " + queue);
-
-        queue.dequeue();
-        System.out.println("Dequeue from Queue  : " + queue);
-
-        System.out.println("Pop from Queue      : " + queue.peek());
     }
 }
