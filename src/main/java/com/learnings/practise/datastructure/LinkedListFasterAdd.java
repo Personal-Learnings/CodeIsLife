@@ -6,7 +6,7 @@ public class LinkedListFasterAdd<T> {
     private Node<T> tailNode;
     private int size;
 
-    private void add(T data) {
+    void add(T data) {
         if (isEmpty()) {
             headNode = new Node<>();
             headNode.setData(data);

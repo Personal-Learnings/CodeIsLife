@@ -3,26 +3,24 @@ package com.learnings.practise.datastructure;
 public class Queue<T> {
 
     private int front;
-    private int rear;
+    private int rear = -1;
     private int size;
-    private int maxSize = 5;
-    private Object [] data = new Object[maxSize];
+    private Object [] data = new Object[3];
 
-    private void enqueue(T element) throws Exception {
+    private void enqueue(T element) {
         if(isFull()) {
-            Object [] newArray = new Object[maxSize * 2];
-            int i = 0;
-            while(!isEmpty()) {
-                newArray[i] = dequeue();
-                ++i;
+            Object [] newArray = new Object[data.length * 2];
+            int j = 0;
+            for(int i = front; i < getSize(); i++, j++) {
+                newArray[j] = data[i % data.length];
             }
             data = newArray;
             front = 0;
-            rear = size = i;
-            maxSize = maxSize * 2;
+            rear = j - 1;
+            size = j;
         }
+        rear = (rear + 1) % data.length;
         data[rear] = element;
-        ++rear;
         ++size;
     }
 
@@ -31,20 +29,16 @@ public class Queue<T> {
         if(isEmpty()) {
             throw new Exception("Queue is Empty");
         } else {
-            T element = (T) data[front];
+            T element = (T) data[front % data.length];
             --size;
-            if(isEmpty()) {
-                front = rear = 0;
-            } else {
-                ++front;
-            }
+            ++front;
             return element;
         }
     }
 
     @SuppressWarnings("unchecked")
     private T peek() {
-        return isEmpty() ? null : (T) data[front];
+        return isEmpty() ? null : (T) data[front % data.length];
     }
 
     public boolean isEmpty() {
@@ -52,7 +46,7 @@ public class Queue<T> {
     }
 
     private boolean isFull() {
-        return rear == maxSize;
+        return getSize() == data.length;
     }
 
     public int getSize() {
@@ -65,7 +59,7 @@ public class Queue<T> {
         int index = front;
         for(int i = 0; i < getSize(); i++, index++) {
             stringBuilder.append("|");
-            stringBuilder.append(data[index]);
+            stringBuilder.append(data[index % data.length]);
             stringBuilder.append("| ");
         }
         return stringBuilder.toString();
@@ -82,23 +76,32 @@ public class Queue<T> {
         queue.enqueue(3);
         System.out.println("Enqueue 3 to Queue  : " + queue);
 
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
         queue.enqueue(4);
         System.out.println("Enqueue 4 to Queue  : " + queue);
 
         queue.enqueue(5);
         System.out.println("Enqueue 5 to Queue  : " + queue);
 
-        queue.dequeue();
-        System.out.println("Dequeue from Queue  : " + queue);
-
-        queue.dequeue();
-        System.out.println("Dequeue from Queue  : " + queue);
-
         queue.enqueue(6);
         System.out.println("Enqueue 6 to Queue  : " + queue);
 
         queue.enqueue(7);
         System.out.println("Enqueue 7 to Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.dequeue();
+        System.out.println("Dequeue from Queue  : " + queue);
+
+        queue.enqueue(8);
+        System.out.println("Enqueue 8 to Queue  : " + queue);
+
+        queue.enqueue(9);
+        System.out.println("Enqueue 9 to Queue  : " + queue);
 
         queue.dequeue();
         System.out.println("Dequeue from Queue  : " + queue);
@@ -121,8 +124,8 @@ public class Queue<T> {
             System.out.println("Dequeue from Queue  : " + e.getMessage());
         }
 
-        queue.enqueue(8);
-        System.out.println("Enqueue 8 to Queue  : " + queue);
+        queue.enqueue(10);
+        System.out.println("Enqueue 10 to Queue  : " + queue);
 
         queue.dequeue();
         System.out.println("Dequeue from Queue  : " + queue);
