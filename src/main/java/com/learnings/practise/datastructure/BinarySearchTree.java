@@ -6,49 +6,39 @@ public class BinarySearchTree<T> {
     private int size;
 
     private void insert(T element) {
-        if(isEmpty()) {
-            tree = new Node<>();
-            tree.setData(element);
-        } else {
-            addNewElement(tree, tree, element);
-        }
+        tree = addNewElement(tree, element);
         ++size;
     }
 
-    private void addNewElement(Node<T> previousNode, Node<T> currentNode, T element)  {
+    private Node<T> addNewElement(Node<T> currentNode, T element)  {
         if(currentNode == null) {
-            Node<T> newNode = new Node<>();
-            newNode.setData(element);
-
-            if(isGreaterThanOrEqual(previousNode.getData(), element)) {
-                previousNode.setRightNode(newNode);
-            } else {
-                previousNode.setLeftNode(newNode);
-            }
+            return new Node<>(element);
         }
         else if(isGreaterThanOrEqual(currentNode.getData(), element)) {
-            addNewElement(currentNode, currentNode.getRightNode(), element);
+            currentNode.setRightNode(addNewElement(currentNode.getRightNode(), element));
+
         } else {
-            addNewElement(currentNode, currentNode.getLeftNode(), element);
+            currentNode.setLeftNode(addNewElement(currentNode.getLeftNode(), element));
         }
+        return currentNode;
     }
 
     private T search(T element) throws Exception {
-        return searchElement(tree, tree, element);
+        return searchElement(tree, element);
     }
 
-    private T searchElement(Node<T> previousNode, Node<T> currentNode, T element) throws Exception  {
-        if(element.equals(previousNode.getData())) {
-            return previousNode.getData();
-
-        } else if(null == currentNode) {
+    private T searchElement(Node<T> currentNode, T element) throws Exception  {
+        if(null == currentNode) {
             throw new Exception(element + " Not Found");
+        }
+        else if(element.equals(currentNode.getData())) {
+            return currentNode.getData();
 
         } else if(isGreaterThanOrEqual(currentNode.getData(), element)) {
-             return searchElement(currentNode, currentNode.getRightNode(), element);
+             return searchElement(currentNode.getRightNode(), element);
 
         } else {
-            return searchElement(currentNode, currentNode.getLeftNode(), element);
+            return searchElement(currentNode.getLeftNode(), element);
         }
     }
 
@@ -96,12 +86,12 @@ public class BinarySearchTree<T> {
         private Node<T> leftNode;
         private Node<T> rightNode;
 
-        public T getData() {
-            return data;
+        Node(T element) {
+            this.data = element;
         }
 
-        public void setData(T data) {
-            this.data = data;
+        public T getData() {
+            return data;
         }
 
         Node<T> getLeftNode() {
