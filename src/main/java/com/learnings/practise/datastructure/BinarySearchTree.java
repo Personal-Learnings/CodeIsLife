@@ -42,6 +42,36 @@ public class BinarySearchTree<T> {
         }
     }
 
+    private T getMin() throws Exception {
+        if(isEmpty()) {
+            throw new Exception("Binary Search Tree is Empty.");
+        }
+        return findMin(tree, tree);
+    }
+
+    private T findMin(Node<T> previousNode, Node<T> currentNode) {
+        if(currentNode == null) {
+           return previousNode.getData();
+        } else {
+            return findMin(currentNode, currentNode.getLeftNode());
+        }
+    }
+
+    private T getMax() throws Exception {
+        if(isEmpty()) {
+            throw new Exception("Binary Search Tree is Empty.");
+        }
+        return findMax(tree, tree);
+    }
+
+    private T findMax(Node<T> previousNode, Node<T> currentNode) {
+        if(currentNode == null) {
+            return previousNode.getData();
+        } else {
+            return findMax(currentNode, currentNode.getRightNode());
+        }
+    }
+
     public int getSize() {
         return size;
     }
@@ -61,8 +91,27 @@ public class BinarySearchTree<T> {
 
     public static void main(String[] args) throws Exception {
         BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+
+        try {
+            binarySearchTree.getMin();
+        } catch (Exception e) {
+            System.out.println("Min of Tree   : " + e.getMessage());
+        }
+
+        try {
+            binarySearchTree.getMax();
+        } catch (Exception e) {
+            System.out.println("Max of Tree   : " + e.getMessage());
+        }
+
         binarySearchTree.insert(12);
+        System.out.println("Min of Tree   : " + binarySearchTree.getMin());
+        System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+
         binarySearchTree.insert(7);
+        System.out.println("Min of Tree   : " + binarySearchTree.getMin());
+        System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+
         binarySearchTree.insert(5);
         binarySearchTree.insert(8);
 
@@ -70,13 +119,16 @@ public class BinarySearchTree<T> {
         binarySearchTree.insert(27);
         binarySearchTree.insert(18);
 
-        System.out.println("Searching 12   : " + binarySearchTree.search(12));
-        System.out.println("Searching 27   : " + binarySearchTree.search(27));
+        System.out.println("Min of Tree   : " + binarySearchTree.getMin());
+        System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+
+        System.out.println("Searching 12  : " + binarySearchTree.search(12));
+        System.out.println("Searching 27  : " + binarySearchTree.search(27));
 
         try {
             binarySearchTree.search(32);
         } catch (Exception e) {
-            System.out.println("Searching 32   : " + e.getMessage());
+            System.out.println("Searching 32  : " + e.getMessage());
         }
         System.out.println("Searching 5   : " + binarySearchTree.search(5));
     }
