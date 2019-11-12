@@ -1,5 +1,7 @@
 package com.learnings.practise.datastructure;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class BinarySearchTree<T> {
 
     private Node<T> tree;
@@ -72,6 +74,17 @@ public class BinarySearchTree<T> {
         }
     }
 
+    private int getHeight() {
+        return findHeight(tree);
+    }
+
+    private int findHeight(Node<T> node) {
+        if(node == null) {
+            return -1;
+        }
+        return Math.max(findHeight(node.getLeftNode()), findHeight(node.getRightNode())) + 1;
+    }
+
     public int getSize() {
         return size;
     }
@@ -103,24 +116,38 @@ public class BinarySearchTree<T> {
         } catch (Exception e) {
             System.out.println("Max of Tree   : " + e.getMessage());
         }
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
+        System.out.println("Inserting 12  : ");
         binarySearchTree.insert(12);
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
+        System.out.println("Inserting 7   : ");
         binarySearchTree.insert(7);
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
+        System.out.println("Inserting 5   : ");
         binarySearchTree.insert(5);
+
+        System.out.println("Inserting 8   : ");
         binarySearchTree.insert(8);
 
+        System.out.println("Inserting 19  : ");
         binarySearchTree.insert(19);
+
+        System.out.println("Inserting 27  : ");
         binarySearchTree.insert(27);
+
+        System.out.println("Inserting 18  : ");
         binarySearchTree.insert(18);
 
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
         System.out.println("Searching 12  : " + binarySearchTree.search(12));
         System.out.println("Searching 27  : " + binarySearchTree.search(27));
@@ -131,6 +158,30 @@ public class BinarySearchTree<T> {
             System.out.println("Searching 32  : " + e.getMessage());
         }
         System.out.println("Searching 5   : " + binarySearchTree.search(5));
+
+        System.out.println("Inserting 4   : ");
+        binarySearchTree.insert(4);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+
+        System.out.println("Inserting 3   : ");
+        binarySearchTree.insert(3);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+
+        System.out.println("Inserting 32  : ");
+        binarySearchTree.insert(32);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+
+        System.out.println("Inserting 42  : ");
+        binarySearchTree.insert(42);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+
+        System.out.println("Inserting 52  : ");
+        binarySearchTree.insert(52);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+
+        System.out.println("Inserting 62  : ");
+        binarySearchTree.insert(62);
+        System.out.println("Tree Height   : " + binarySearchTree.getHeight());
     }
 
     private static class Node<T> {
