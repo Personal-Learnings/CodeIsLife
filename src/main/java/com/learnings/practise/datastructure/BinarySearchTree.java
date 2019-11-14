@@ -202,7 +202,7 @@ public class BinarySearchTree<T> {
         System.out.println("Inserting 62  : ");
         binarySearchTree.insert(62);
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
-        System.out.println("Print Level Order : " + binarySearchTree.getTreeByLevelOrder());
+        System.out.println("Print Level Order / Breadth First Binary Tree : " + binarySearchTree.getTreeByLevelOrder());
     }
 
     private static class Node<T> {
