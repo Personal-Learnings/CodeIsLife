@@ -7,11 +7,11 @@ public class Queue<T> {
     private int size;
     private Object [] data = new Object[3];
 
-    private void enqueue(T element) {
+    void enqueue(T element) {
         if(isFull()) {
             Object [] newArray = new Object[data.length * 2];
             int j = 0;
-            for(int i = front; i <= getSize(); i++, j++) {
+            for(int i = front; i < (getSize() + front); i++, j++) {
                 newArray[j] = data[i % data.length];
             }
             data = newArray;
@@ -25,7 +25,7 @@ public class Queue<T> {
     }
 
     @SuppressWarnings("unchecked")
-    private T dequeue() throws Exception {
+    T dequeue() throws Exception {
         if(isEmpty()) {
             throw new Exception("Queue is Empty");
         } else {
@@ -125,9 +125,6 @@ public class Queue<T> {
         System.out.println("Dequeue from Queue  : " + queue);
 
         System.out.println("Peek from Queue     : |" + queue.peek() + "|");
-
-        queue.dequeue();
-        System.out.println("Dequeue from Queue  : " + queue);
 
         try{
             queue.dequeue();
