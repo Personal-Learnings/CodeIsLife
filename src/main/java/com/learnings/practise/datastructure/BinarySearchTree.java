@@ -87,34 +87,22 @@ public class BinarySearchTree<T> {
 
     private String getTreeByLevelOrder() throws Exception {
         Queue<String> levelOrderQueue = new Queue<>();
-        Queue<Node<T>> tempQueue = new Queue<>();
-        tempQueue.enqueue(tree);
+        Queue<Node<T>> levelData = new Queue<>();
+        levelData.enqueue(tree);
 
-        scanLevelOrder(tempQueue, levelOrderQueue);
-        return levelOrderQueue.toString();
-    }
-
-    private void scanLevelOrder(Queue<Node<T>> levelData, Queue<String> levelOrderQueue) throws Exception {
-        Queue<Node<T>> tempQueue = new Queue<>();
-        if(levelData.isEmpty()) {
-            return;
-        } else {
-            while(!levelData.isEmpty()) {
-                Node<T> currentNode = levelData.dequeue();
-                if(null != currentNode) {
-                    if(null != currentNode.getData()) {
-                        levelOrderQueue.enqueue(currentNode.getData().toString());
-                    }
-                    if(null != currentNode.getLeftNode()) {
-                        tempQueue.enqueue(currentNode.getLeftNode());
-                    }
-                    if(null != currentNode.getRightNode()) {
-                        tempQueue.enqueue(currentNode.getRightNode());
-                    }
+        while(!levelData.isEmpty()) {
+            Node<T> currentNode = levelData.dequeue();
+            if(null != currentNode) {
+                if(null != currentNode.getLeftNode()) {
+                    levelData.enqueue(currentNode.getLeftNode());
                 }
+                if(null != currentNode.getRightNode()) {
+                    levelData.enqueue(currentNode.getRightNode());
+                }
+                levelOrderQueue.enqueue(currentNode.getData().toString());
             }
         }
-        scanLevelOrder(tempQueue, levelOrderQueue);
+        return levelOrderQueue.toString();
     }
 
     public int getSize() {
