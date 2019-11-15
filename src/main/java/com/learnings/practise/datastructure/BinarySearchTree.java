@@ -1,7 +1,5 @@
 package com.learnings.practise.datastructure;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class BinarySearchTree<T> {
 
     private Node<T> tree;
@@ -85,7 +83,7 @@ public class BinarySearchTree<T> {
         return Math.max(findHeight(node.getLeftNode()), findHeight(node.getRightNode())) + 1;
     }
 
-    private String getTreeByLevelOrder() throws Exception {
+    private String getTreeByLevelOrder_breadthFirst() throws Exception {
         Queue<String> levelOrderQueue = new Queue<>();
         Queue<Node<T>> levelData = new Queue<>();
         levelData.enqueue(tree);
@@ -103,6 +101,49 @@ public class BinarySearchTree<T> {
             }
         }
         return levelOrderQueue.toString();
+    }
+
+    private String getTreeByPreOrder_depthFirst() {
+        StringBuilder result = new StringBuilder();
+        traversePreOrder(tree, result);
+        return result.toString();
+    }
+
+    private void traversePreOrder(Node<T> currentNode, StringBuilder result) {
+        if(currentNode == null) return;
+        result.append(formatData(currentNode.getData()));
+        traversePreOrder(currentNode.getLeftNode(), result);
+        traversePreOrder(currentNode.getRightNode(), result);
+    }
+
+    private String getTreeByInOrder_depthFirst() {
+        StringBuilder result = new StringBuilder();
+        traverseInOrder(tree, result);
+        return result.toString();
+    }
+
+    private void traverseInOrder(Node<T> currentNode, StringBuilder result) {
+        if(currentNode == null) return;
+        traverseInOrder(currentNode.getLeftNode(), result);
+        result.append(formatData(currentNode.getData()));
+        traverseInOrder(currentNode.getRightNode(), result);
+    }
+
+    private String getTreeByPostOrder_depthFirst() {
+        StringBuilder result = new StringBuilder();
+        traversePostOrder(tree, result);
+        return result.toString();
+    }
+
+    private void traversePostOrder(Node<T> currentNode, StringBuilder result) {
+        if(currentNode == null) return;
+        traversePostOrder(currentNode.getLeftNode(), result);
+        traversePostOrder(currentNode.getRightNode(), result);
+        result.append(formatData(currentNode.getData()));
+    }
+
+    private String formatData(T data) {
+        return "|" + data + "| ";
     }
 
     public int getSize() {
@@ -202,7 +243,11 @@ public class BinarySearchTree<T> {
         System.out.println("Inserting 62  : ");
         binarySearchTree.insert(62);
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
-        System.out.println("Print Level Order / Breadth First Binary Tree : " + binarySearchTree.getTreeByLevelOrder());
+
+        System.out.println("Print Level Order / Breadth First Binary Tree Traversal : " + binarySearchTree.getTreeByLevelOrder_breadthFirst());
+        System.out.println("Print Pre Order / Depth First Binary Tree Traversal     : " + binarySearchTree.getTreeByPreOrder_depthFirst());
+        System.out.println("Print In Order / Depth First Binary Tree Traversal      : " + binarySearchTree.getTreeByInOrder_depthFirst());
+        System.out.println("Print Post Order / Depth First Binary Tree Traversal    : " + binarySearchTree.getTreeByPostOrder_depthFirst());
     }
 
     private static class Node<T> {
