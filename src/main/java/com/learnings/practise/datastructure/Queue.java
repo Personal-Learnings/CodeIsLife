@@ -7,7 +7,7 @@ public class Queue<T> {
     private int size;
     private Object [] data = new Object[3];
 
-    void enqueue(T element) {
+    public void enqueue(T element) {
         if(isFull()) {
             Object [] newArray = new Object[data.length * 2];
             int j = 0;
@@ -25,7 +25,7 @@ public class Queue<T> {
     }
 
     @SuppressWarnings("unchecked")
-    T dequeue() throws Exception {
+    public T dequeue() throws Exception {
         if(isEmpty()) {
             throw new Exception("Queue is Empty");
         } else {
