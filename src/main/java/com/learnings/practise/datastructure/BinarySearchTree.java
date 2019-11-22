@@ -5,7 +5,7 @@ public class BinarySearchTree<T> {
     private Node<T> tree;
     private int size;
 
-    private void insert(T element) {
+    public void insert(T element) {
         tree = addNewElement(tree, element);
         ++size;
     }
@@ -14,7 +14,7 @@ public class BinarySearchTree<T> {
         if(currentNode == null) {
             return new Node<>(element);
         }
-        else if(isGreaterThanOrEqual(currentNode.getData(), element)) {
+        else if(isGreater(currentNode.getData(), element)) {
             currentNode.setRightNode(addNewElement(currentNode.getRightNode(), element));
 
         } else {
@@ -34,7 +34,7 @@ public class BinarySearchTree<T> {
         else if(element.equals(currentNode.getData())) {
             return currentNode.getData();
 
-        } else if(isGreaterThanOrEqual(currentNode.getData(), element)) {
+        } else if(isGreater(currentNode.getData(), element)) {
              return searchElement(currentNode.getRightNode(), element);
 
         } else {
@@ -46,12 +46,12 @@ public class BinarySearchTree<T> {
         if(isEmpty()) {
             throw new Exception("Binary Search Tree is Empty.");
         }
-        return findMin(tree, tree);
+        return findMin(tree, tree).getData();
     }
 
-    private T findMin(Node<T> previousNode, Node<T> currentNode) {
+    private Node<T> findMin(Node<T> previousNode, Node<T> currentNode) {
         if(currentNode == null) {
-           return previousNode.getData();
+           return previousNode;
         } else {
             return findMin(currentNode, currentNode.getLeftNode());
         }
@@ -61,12 +61,12 @@ public class BinarySearchTree<T> {
         if(isEmpty()) {
             throw new Exception("Binary Search Tree is Empty.");
         }
-        return findMax(tree, tree);
+        return findMax(tree, tree).getData();
     }
 
-    private T findMax(Node<T> previousNode, Node<T> currentNode) {
+    private Node<T>  findMax(Node<T> previousNode, Node<T> currentNode) {
         if(currentNode == null) {
-            return previousNode.getData();
+            return previousNode;
         } else {
             return findMax(currentNode, currentNode.getRightNode());
         }
@@ -81,6 +81,11 @@ public class BinarySearchTree<T> {
             return -1;
         }
         return Math.max(findHeight(node.getLeftNode()), findHeight(node.getRightNode())) + 1;
+    }
+
+    /** Enabled for Practise Purpose */
+    public Node<T> getTree() {
+        return tree;
     }
 
     private String getTreeByLevelOrder_breadthFirst() throws Exception {
@@ -146,6 +151,54 @@ public class BinarySearchTree<T> {
         return "|" + data + "| ";
     }
 
+    private void delete(T data) {
+        if(tree == null) {
+            System.out.println("Tree is Empty");
+            return;
+        }
+        deleteEntry(tree, tree, data);
+    }
+
+    private void deleteEntry(Node<T> parentNode, Node<T> currentNode, T data) {
+        if(currentNode != null) {
+            if (data.equals(currentNode.getData())) {
+
+                if(isLeafNode(currentNode)) {
+                    if((Integer) currentNode.getData() > (Integer) parentNode.getData()) {
+                        parentNode.setRightNode(null);
+                    } else {
+                        parentNode.setLeftNode(null);
+                    }
+                } else if(hasOneChild(currentNode)) {
+                    if(currentNode.getLeftNode() != null) {
+                        parentNode.setLeftNode(currentNode.getLeftNode());
+                    } else {
+                        parentNode.setRightNode(currentNode.getRightNode());
+                    }
+                } else {
+                    Node<T> minNode = findMin(currentNode.getRightNode(), currentNode.getRightNode());
+                    currentNode.setData(minNode.getData());
+
+                    deleteEntry(currentNode, currentNode.getRightNode(), minNode.getData());
+                }
+            } else if ((Integer) data > (Integer) currentNode.getData()) {
+                deleteEntry(currentNode, currentNode.getRightNode(), data);
+            } else {
+                deleteEntry(currentNode, currentNode.getLeftNode(), data);
+            }
+        } else {
+            System.out.println(String.format("Node %s Not Found", data));
+        }
+    }
+
+    private boolean hasOneChild(Node<T> currentNode) {
+        return (currentNode.getLeftNode() == null ^ currentNode.getRightNode() == null);
+    }
+
+    private boolean isLeafNode(Node<T> currentNode) {
+        return (currentNode.getLeftNode() == null && currentNode.getRightNode() == null);
+    }
+
     public int getSize() {
         return size;
     }
@@ -159,8 +212,8 @@ public class BinarySearchTree<T> {
         return super.toString();
     }
 
-    private boolean isGreaterThanOrEqual(T currentNode, T newNode) {
-        return (Integer) newNode >= (Integer) currentNode;
+    private boolean isGreater(T currentNode, T newNode) {
+        return (Integer) newNode > (Integer) currentNode;
     }
 
     public static void main(String[] args) throws Exception {
@@ -179,14 +232,14 @@ public class BinarySearchTree<T> {
         }
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
-        System.out.println("Inserting 12  : ");
-        binarySearchTree.insert(12);
+        System.out.println("Inserting 13  : ");
+        binarySearchTree.insert(13);
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
-        System.out.println("Inserting 7   : ");
-        binarySearchTree.insert(7);
+        System.out.println("Inserting 9   : ");
+        binarySearchTree.insert(9);
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
@@ -203,14 +256,20 @@ public class BinarySearchTree<T> {
         System.out.println("Inserting 27  : ");
         binarySearchTree.insert(27);
 
-        System.out.println("Inserting 18  : ");
-        binarySearchTree.insert(18);
+        System.out.println("Inserting 16  : ");
+        binarySearchTree.insert(16);
+
+        System.out.println("Inserting 15  : ");
+        binarySearchTree.insert(15);
+
+        System.out.println("Inserting 14  : ");
+        binarySearchTree.insert(14);
 
         System.out.println("Min of Tree   : " + binarySearchTree.getMin());
         System.out.println("Max of Tree   : " + binarySearchTree.getMax());
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
 
-        System.out.println("Searching 12  : " + binarySearchTree.search(12));
+        System.out.println("Searching 12  : " + binarySearchTree.search(13));
         System.out.println("Searching 27  : " + binarySearchTree.search(27));
 
         try {
@@ -242,12 +301,39 @@ public class BinarySearchTree<T> {
 
         System.out.println("Inserting 62  : ");
         binarySearchTree.insert(62);
+
+        System.out.println("Inserting 7  : ");
+        binarySearchTree.insert(7);
+
+        System.out.println("Inserting 11  : ");
+        binarySearchTree.insert(11);
+
+        System.out.println("Inserting 10  : ");
+        binarySearchTree.insert(10);
+
+        System.out.println("Inserting 12  : ");
+        binarySearchTree.insert(12);
+
         System.out.println("Tree Height   : " + binarySearchTree.getHeight());
+        System.out.println("Min of Tree   : " + binarySearchTree.getMin());
+        System.out.println("Max of Tree   : " + binarySearchTree.getMax());
 
         System.out.println("Print Level Order / Breadth First Binary Tree Traversal : " + binarySearchTree.getTreeByLevelOrder_breadthFirst());
         System.out.println("Print Pre Order / Depth First Binary Tree Traversal     : " + binarySearchTree.getTreeByPreOrder_depthFirst());
         System.out.println("Print In Order / Depth First Binary Tree Traversal      : " + binarySearchTree.getTreeByInOrder_depthFirst());
         System.out.println("Print Post Order / Depth First Binary Tree Traversal    : " + binarySearchTree.getTreeByPostOrder_depthFirst());
+
+        binarySearchTree.delete(8);
+        binarySearchTree.delete(62);
+
+        binarySearchTree.delete(92);
+
+        binarySearchTree.delete(42);
+        binarySearchTree.delete(4);
+
+        binarySearchTree.delete(19);
+        binarySearchTree.delete(9);
+        binarySearchTree.delete(13);
     }
 
     private static class Node<T> {
@@ -261,6 +347,10 @@ public class BinarySearchTree<T> {
 
         public T getData() {
             return data;
+        }
+
+        public void setData(T data) {
+            this.data = data;
         }
 
         Node<T> getLeftNode() {

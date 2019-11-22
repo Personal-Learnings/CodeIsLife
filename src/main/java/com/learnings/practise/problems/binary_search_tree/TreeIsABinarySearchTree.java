@@ -14,7 +14,7 @@ public class TreeIsABinarySearchTree<T> {
         if(null == currentNode) {
             return true;
         }
-        if( (null == currentNode.getLeftNode() || getData(currentNode.getLeftNode()) <= getData(currentNode))
+        if( (null == currentNode.getLeftNode() || getData(currentNode.getLeftNode()) < getData(currentNode))
                 && (null == currentNode.getRightNode() || getData(currentNode.getRightNode()) > getData(currentNode))) {
 
             return (findByPreOrder_failsWhenLeftTreeHasGreaterValueThanRoot(currentNode.getLeftNode())
