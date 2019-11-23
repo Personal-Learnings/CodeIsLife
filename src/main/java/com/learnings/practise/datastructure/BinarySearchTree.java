@@ -83,11 +83,6 @@ public class BinarySearchTree<T> {
         return Math.max(findHeight(node.getLeftNode()), findHeight(node.getRightNode())) + 1;
     }
 
-    /** Enabled for Practise Purpose */
-    public Node<T> getTree() {
-        return tree;
-    }
-
     private String getTreeByLevelOrder_breadthFirst() throws Exception {
         Queue<String> levelOrderQueue = new Queue<>();
         Queue<Node<T>> levelData = new Queue<>();

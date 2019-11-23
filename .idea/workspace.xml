@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/InOrderSuccessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,7 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/TreeIsABinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/TreeIsABinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/InOrderSuccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/InOrderSuccessor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinarySearchTree">
+  <component name="RunManager" selected="Application.InOrderSuccessor">
     <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.BinarySearchTree" />
       <module name="CodeIsLife.main" />
@@ -76,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfixToPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.stack.InfixToPostFix" />
+    <configuration name="InOrderSuccessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.binary_search_tree.InOrderSuccessor" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnings.practise.problems.stack.*" />
+          <option name="PATTERN" value="com.learnings.practise.problems.binary_search_tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InOrderSuccessor" />
         <item itemvalue="Application.TreeIsABinarySearchTree" />
         <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="Application.QueueWithLinkedList" />
         <item itemvalue="Application.Queue" />
-        <item itemvalue="Application.InfixToPostFix" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +175,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/stack/PreFixAndPostFixExpressionEvaluator.java</url>
           <line>8</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/InOrderSuccessor.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
