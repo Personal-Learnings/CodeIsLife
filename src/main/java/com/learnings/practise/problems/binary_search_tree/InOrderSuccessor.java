@@ -15,7 +15,7 @@ public class InOrderSuccessor<T> {
                 : findMinOfRightNode(nodeFound.getRightNode(), nodeFound.getRightNode());
     }
 
-    private Integer findMaxOfAncestors(Node<T> tree, T data) {
+    private Integer findMaxOfAncestors(Node<T> tree, T data) throws Exception {
         T ancestor =  null;
         Node<T> iteratorNode =  tree;
 
@@ -26,6 +26,9 @@ public class InOrderSuccessor<T> {
             } else {
                 iteratorNode = iteratorNode.getRightNode();
             }
+        }
+        if(ancestor == null) {
+            throw new Exception(String.format("Node %s is the last node hence does not have any Inorder Successor", data));
         }
         return (Integer) ancestor;
 
