@@ -2,7 +2,7 @@ package com.learnings.practise.problems.binary_search_tree;
 
 public class InOrderSuccessor<T> {
 
-    private Integer findInOrderSuccessorNode(Node<T> tree, T data) throws Exception {
+    private Integer findInOrderSuccessor(Node<T> tree, T data) throws Exception {
         return traverseInOrder(tree, data);
     }
 
@@ -80,19 +80,19 @@ public class InOrderSuccessor<T> {
         Node<Integer> tree = setupAndGetData();
         InOrderSuccessor<Integer> inOrderSuccessor = new InOrderSuccessor<>();
         try {
-            inOrderSuccessor.findInOrderSuccessorNode(tree, 100);
+            inOrderSuccessor.findInOrderSuccessor(tree, 100);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        System.out.println("Inorder Successor of 19 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 19));
-        System.out.println("Inorder Successor of 5 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 5));
-        System.out.println("Inorder Successor of 7 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 7));
-        System.out.println("Inorder Successor of 12 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 12));
-        System.out.println("Inorder Successor of 16 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 16));
-        System.out.println("Inorder Successor of 10 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 10));
-        System.out.println("Inorder Successor of 13 is: " + inOrderSuccessor.findInOrderSuccessorNode(tree, 13));
+        System.out.println("Inorder Successor of 19 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 19));
+        System.out.println("Inorder Successor of 5 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 5));
+        System.out.println("Inorder Successor of 7 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 7));
+        System.out.println("Inorder Successor of 12 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 12));
+        System.out.println("Inorder Successor of 16 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 16));
+        System.out.println("Inorder Successor of 10 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 10));
+        System.out.println("Inorder Successor of 13 is: " + inOrderSuccessor.findInOrderSuccessor(tree, 13));
         try {
-            inOrderSuccessor.findInOrderSuccessorNode(tree, 42);
+            inOrderSuccessor.findInOrderSuccessor(tree, 42);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
