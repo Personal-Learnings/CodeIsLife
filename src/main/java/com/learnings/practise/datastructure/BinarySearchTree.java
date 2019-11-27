@@ -1,5 +1,8 @@
 package com.learnings.practise.datastructure;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchTree<T> {
 
     private Node<T> tree;
@@ -23,7 +26,7 @@ public class BinarySearchTree<T> {
         return currentNode;
     }
 
-    private T search(T element) throws Exception {
+    T search(T element) throws Exception {
         return searchElement(tree, element);
     }
 
@@ -116,16 +119,16 @@ public class BinarySearchTree<T> {
         traversePreOrder(currentNode.getRightNode(), result);
     }
 
-    private String getTreeByInOrder_depthFirst() {
-        StringBuilder result = new StringBuilder();
+    List<T> getTreeByInOrder_depthFirst() {
+        List<T> result = new ArrayList<>();
         traverseInOrder(tree, result);
-        return result.toString();
+        return result;
     }
 
-    private void traverseInOrder(Node<T> currentNode, StringBuilder result) {
+    private void traverseInOrder(Node<T> currentNode, List<T> result) {
         if(currentNode == null) return;
         traverseInOrder(currentNode.getLeftNode(), result);
-        result.append(formatData(currentNode.getData()));
+        result.add(currentNode.getData());
         traverseInOrder(currentNode.getRightNode(), result);
     }
 
@@ -209,6 +212,10 @@ public class BinarySearchTree<T> {
 
     private boolean isGreater(T currentNode, T newNode) {
         return (Integer) newNode > (Integer) currentNode;
+    }
+
+    public Node<T> getTree() {
+        return tree;
     }
 
     public static void main(String[] args) throws Exception {
@@ -331,7 +338,7 @@ public class BinarySearchTree<T> {
         binarySearchTree.delete(13);
     }
 
-    private static class Node<T> {
+    static class Node<T> {
         private T data;
         private Node<T> leftNode;
         private Node<T> rightNode;
