@@ -37,7 +37,7 @@ public class Queue<T> {
     }
 
     @SuppressWarnings("unchecked")
-    private T peek() {
+    public T peek() {
         return isEmpty() ? null : (T) data[front % data.length];
     }
 

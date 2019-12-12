@@ -149,7 +149,7 @@ public class BinarySearchTree<T> {
         return "|" + data + "| ";
     }
 
-    private void delete(T data) {
+    public void delete(T data) {
         if(tree == null) {
             System.out.println("Tree is Empty");
             return;
