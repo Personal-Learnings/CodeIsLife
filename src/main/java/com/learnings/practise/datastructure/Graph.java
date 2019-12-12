@@ -63,6 +63,8 @@ public class Graph<V, E> {
 
     @SuppressWarnings({"rawtypes", "unchecked", "SuspiciousMethodCalls"})
     private List getDepthFirstTraversal_iterative_usingStack_BigO_VPlusE() throws Exception {
+
+        //Using LinkedHashMap to maintain the insertion order of the keys
         Map<Object, Boolean> visited = new LinkedHashMap<>();
         Stack watchStack = new Stack();
 
@@ -76,6 +78,7 @@ public class Graph<V, E> {
             BinarySearchTree<E> edgeTree = data.getOrDefault(currentVertex, new BinarySearchTree<>());
             List<E> edges = edgeTree.getTreeByInOrder_depthFirst();
 
+            //Remove an item from the stack when there are no edges or all the edges are visited for that vertex
             if(edgeTree.isEmpty() || visited.keySet().containsAll(edges)) {
                 watchStack.pop();
             } else {
@@ -90,7 +93,7 @@ public class Graph<V, E> {
         }
         return new ArrayList<>(visited.keySet());
     }
-
+    
     @SuppressWarnings({"rawtypes"})
     private List getDepthFirstTraversalRecursive() throws Exception {
         List visitedEdges = new ArrayList();

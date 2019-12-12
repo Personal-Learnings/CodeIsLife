@@ -178,22 +178,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="451" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576128885129" />
-    <state width="1398" height="177" key="GridCell.Tab.0.bottom" timestamp="1576130721320">
+    <state width="1398" height="177" key="GridCell.Tab.0.bottom" timestamp="1576131552105">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576130721320" />
-    <state width="1398" height="177" key="GridCell.Tab.0.center" timestamp="1576130721318">
+    <state width="1398" height="177" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576131552105" />
+    <state width="1398" height="177" key="GridCell.Tab.0.center" timestamp="1576131552102">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576130721318" />
-    <state width="1398" height="177" key="GridCell.Tab.0.left" timestamp="1576130721317">
+    <state width="1398" height="177" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576131552102" />
+    <state width="1398" height="177" key="GridCell.Tab.0.left" timestamp="1576131552101">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576130721317" />
-    <state width="1398" height="177" key="GridCell.Tab.0.right" timestamp="1576130721319">
+    <state width="1398" height="177" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576131552101" />
+    <state width="1398" height="177" key="GridCell.Tab.0.right" timestamp="1576131552103">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576130721319" />
+    <state width="1398" height="177" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576131552103" />
     <state width="1398" height="200" key="GridCell.Tab.1.bottom" timestamp="1576129786345">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -240,16 +240,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/binary_search_tree/InOrderSuccessor.java</url>
           <line>12</line>
           <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/Graph.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/Graph.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
