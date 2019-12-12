@@ -1,9 +1,6 @@
 package com.learnings.practise.datastructure;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Simple Graph Implementation Using Adjacency List. With List and Binary Search Tree
@@ -65,65 +62,53 @@ public class Graph<V, E> {
     }
 
     @SuppressWarnings({"rawtypes", "unchecked", "SuspiciousMethodCalls"})
-    private List getDepthFirstTraversal_iterative_usingStack() throws Exception {
-        List visited = new ArrayList();
+    private List getDepthFirstTraversal_iterative_usingStack_BigO_VPlusE() throws Exception {
+        Map<Object, Boolean> visited = new LinkedHashMap<>();
         Stack watchStack = new Stack();
 
-        V root = data.keySet().stream().findFirst().orElseThrow(() -> new Exception("Graph has no vertices"));
+        V root = data.keySet().stream().findFirst().orElseThrow(() -> new Exception("Graph is Empty"));
         watchStack.push(root);
+        visited.put(root, true);
 
-        while(true) {
-            Object currentVertex = watchStack.top();
-            visited.add(currentVertex);
-
-            BinarySearchTree<E> edgeTree = data.get(currentVertex);
-            List<E> edges = edgeTree.getTreeByInOrder_depthFirst();
-
-            if(visited.containsAll(edges)) {
-                break;
-            }
-            for(E edge : edges) {
-                if(!visited.contains(edge)) {
-                    watchStack.push(edge);
-                    break;
-                }
-            }
-        }
-
-        /** Backtracking */
         while(!watchStack.isEmpty()) {
-            Object currentVertex = watchStack.pop();
+            Object currentVertex = watchStack.top();
 
-            BinarySearchTree<E> edgeTree = data.get(currentVertex);
+            BinarySearchTree<E> edgeTree = data.getOrDefault(currentVertex, new BinarySearchTree<>());
             List<E> edges = edgeTree.getTreeByInOrder_depthFirst();
 
-            for(E edge : edges) {
-                if(!visited.contains(edge)) {
-                    visited.add(edge);
+            if(edgeTree.isEmpty() || visited.keySet().containsAll(edges)) {
+                watchStack.pop();
+            } else {
+                for(E edge : edges) {
+                    if(!visited.containsKey(edge)) {
+                        watchStack.push(edge);
+                        visited.put(edge, true);
+                        break;
+                    }
                 }
             }
         }
-        return visited;
+        return new ArrayList<>(visited.keySet());
     }
 
     @SuppressWarnings({"rawtypes"})
     private List getDepthFirstTraversalRecursive() throws Exception {
         List visitedEdges = new ArrayList();
-        V root = data.keySet().stream().findFirst().orElseThrow(() -> new Exception("Graph has no vertices"));
+        V root = data.keySet().stream().findFirst().orElseThrow(() -> new Exception("Graph is Empty"));
         traverseDepthFirstRecursive(root, visitedEdges);
         return visitedEdges;
     }
 
     @SuppressWarnings({"rawtypes", "unchecked", "SuspiciousMethodCalls"})
     private void traverseDepthFirstRecursive(Object currentVertex, List visitedEdges) {
-        if(null == data.get(currentVertex)) return;
-
         visitedEdges.add(currentVertex);
         BinarySearchTree<E> edgeTree = data.get(currentVertex);
-        List<E> edges = edgeTree.getTreeByInOrder_depthFirst();
-        for(E edge : edges) {
-            if(!visitedEdges.contains(edge)) {
-                traverseDepthFirstRecursive(edge, visitedEdges);
+        if(null != edgeTree) {
+            List<E> edges = edgeTree.getTreeByInOrder_depthFirst();
+            for(E edge : edges) {
+                if(!visitedEdges.contains(edge)) {
+                    traverseDepthFirstRecursive(edge, visitedEdges);
+                }
             }
         }
     }
@@ -146,6 +131,7 @@ public class Graph<V, E> {
 
     public static void main(String[] args) throws Exception {
         Graph<Integer, Integer> graph = new Graph<>();
+
         graph.insert(0, 1);
         graph.insert(0, 3);
 
@@ -171,9 +157,27 @@ public class Graph<V, E> {
 
         graph.insert(5, 1);
         graph.insert(5, 2);
+        graph.insert(5, 7);
 
         graph.insert(6, 1);
         graph.insert(6, 4);
+
+        graph.insert(7, 5);
+        graph.insert(7, 8);
+        graph.insert(7, 9);
+        graph.insert(7, 10);
+
+        graph.insert(8, 7);
+        graph.insert(8, 9);
+        graph.insert(8, 10);
+
+        graph.insert(10, 7);
+        graph.insert(10, 8);
+        graph.insert(10, 9);
+
+        graph.insert(10, 11);
+
+        graph.insert(11, 12);
 
         System.out.println(graph.get(1));
         System.out.println(graph.get(2));
@@ -194,6 +198,6 @@ public class Graph<V, E> {
 
         System.out.println("Level Order Traversal of Graph                 : " + graph.getLevelOrder_breadthFirstTraversal());
         System.out.println("Depth First Traversal of Graph Using Recursion : " + graph.getDepthFirstTraversalRecursive());
-        System.out.println("Depth First Traversal of Graph                 : " + graph.getDepthFirstTraversal_iterative_usingStack());
+        System.out.println("Depth First Traversal of Graph Iterative       : " + graph.getDepthFirstTraversal_iterative_usingStack_BigO_VPlusE());
     }
 }
