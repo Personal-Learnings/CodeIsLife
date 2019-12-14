@@ -4,6 +4,12 @@ import java.util.*;
 
 import static com.learnings.practise.datastructure.GraphUsingHashMap.Cities.*;
 
+/**
+ *
+ * Weighted Graph
+ * @param <V> - Type of Vertices and Edges
+ * @param <D> - Type of Data
+ */
 public class GraphUsingHashMap<V, D> {
 
     private Map<V, Map<V, D>> graphData = new HashMap<>();
@@ -67,7 +73,7 @@ public class GraphUsingHashMap<V, D> {
         graph.insert(KOLKATTA, JAMMU, Short.valueOf("1000"));
         graph.insert(KOLKATTA, CHENNAI, Short.valueOf("600"));
         graph.insert(KOLKATTA, NEW_DELHI, Short.valueOf("900"));
-        
+
         System.out.println("Chennai Connections: " + graph.get(CHENNAI));
         System.out.println("Chennai - Bangalore Distance: " + graph.get(CHENNAI, BANGALORE) + " Miles");
 
