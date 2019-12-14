@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/GraphUsingAdjacencyMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/datastructure/GraphUsingHashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Graph">
+  <component name="RunManager" selected="Application.GraphUsingHashMap">
     <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.Graph" />
       <module name="CodeIsLife.main" />
@@ -82,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUsingAdjacencyMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.GraphUsingAdjacencyMatrix" />
+    <configuration name="GraphUsingAdjacencyMatrix2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.GraphUsingAdjacencyMatrix2DArray" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphUsingAdjacencyMatrix2DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.GraphUsingAdjacencyMatrix2DArray" />
+    <configuration name="GraphUsingHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.datastructure.GraphUsingHashMap" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +124,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GraphUsingAdjacencyMatrix2DArray" />
-        <item itemvalue="Application.GraphUsingAdjacencyMatrix" />
+        <item itemvalue="Application.GraphUsingHashMap" />
         <item itemvalue="Application.GraphUsingAdjacencyList" />
         <item itemvalue="Application.Graph" />
         <item itemvalue="Application.InOrderPredecessor" />
@@ -174,46 +174,46 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="479" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1576130798101" />
-    <state width="451" height="466" key="DebuggerActiveHint" timestamp="1576128885129">
+    <state width="451" height="466" key="DebuggerActiveHint" timestamp="1576305052322">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="451" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576128885129" />
-    <state width="1398" height="177" key="GridCell.Tab.0.bottom" timestamp="1576131552105">
+    <state width="451" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576305052322" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1576307763060">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576131552105" />
-    <state width="1398" height="177" key="GridCell.Tab.0.center" timestamp="1576131552102">
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576307763060" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1576307763058">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576131552102" />
-    <state width="1398" height="177" key="GridCell.Tab.0.left" timestamp="1576131552101">
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576307763058" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1576307763057">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576131552101" />
-    <state width="1398" height="177" key="GridCell.Tab.0.right" timestamp="1576131552103">
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576307763057" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1576307763059">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="177" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576131552103" />
-    <state width="1398" height="200" key="GridCell.Tab.1.bottom" timestamp="1576129786345">
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576307763059" />
+    <state width="1398" height="200" key="GridCell.Tab.1.bottom" timestamp="1576305098642">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576129786345" />
-    <state width="1398" height="200" key="GridCell.Tab.1.center" timestamp="1576129786343">
+    <state width="1398" height="200" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576305098642" />
+    <state width="1398" height="200" key="GridCell.Tab.1.center" timestamp="1576305098640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576129786343" />
-    <state width="1398" height="200" key="GridCell.Tab.1.left" timestamp="1576129786342">
+    <state width="1398" height="200" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576305098640" />
+    <state width="1398" height="200" key="GridCell.Tab.1.left" timestamp="1576305098639">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576129786342" />
-    <state width="1398" height="200" key="GridCell.Tab.1.right" timestamp="1576129786344">
+    <state width="1398" height="200" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576305098639" />
+    <state width="1398" height="200" key="GridCell.Tab.1.right" timestamp="1576305098641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576129786344" />
-    <state x="439" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1575983460711">
+    <state width="1398" height="200" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576305098641" />
+    <state x="439" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1576264161146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="439" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575983460711" />
+    <state x="439" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576264161146" />
     <state width="600" height="415" key="javadoc.popup" timestamp="1575518958015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
