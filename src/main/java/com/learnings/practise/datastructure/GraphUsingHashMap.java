@@ -1,6 +1,11 @@
 package com.learnings.practise.datastructure;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static com.learnings.practise.datastructure.GraphUsingHashMap.Cities.*;
 
@@ -41,6 +46,28 @@ public class GraphUsingHashMap<V, D> {
 
     private void delete(V vertex, V edge) {
         graphData.getOrDefault(vertex, new HashMap<>()).remove(edge);
+    }
+
+    private Short findMinimumSpanningTree() throws Exception {
+        //Remove All Cycles
+        //Remove All Parallel Edges that has maximum value in it.
+        return null;
+    }
+
+    private V getMinimumEdge(Map<V, D> vertexWeightMap) {
+        AtomicReference<Integer> minWeight = new AtomicReference<>(Integer.MAX_VALUE);
+        AtomicReference<V> minVertex = new AtomicReference<>();
+
+        vertexWeightMap.forEach((key, value) -> {
+            if((Integer) value < minWeight.get()) {
+                minVertex.set(key);
+            }
+        });
+        return minVertex.get();
+    }
+
+    private void findShortestPath(V source, V destination) {
+
     }
 
     public static void main(String[] args) throws Exception {
