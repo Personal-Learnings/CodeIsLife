@@ -1,7 +1,6 @@
 package com.learnings.practise.datastructure;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Trie {
 
@@ -40,6 +39,36 @@ public class Trie {
         return "Not Found";
     }
 
+    private List<String> startsWith(String prefix) {
+        char [] chars = prefix.toCharArray();
+        Map<Character, Node> currentMap = data.getChildren();
+        List<String> startWithList = new ArrayList<>();
+
+        for(int i = 0; i < chars.length; i++) {
+            Character currentChar = chars[i];
+            Node node = currentMap.get(currentChar);
+            if(node == null) {
+                return startWithList;
+            }
+            if(i == chars.length - 1) {
+                getStringsWithPrefix(prefix, node.getChildren(), startWithList);
+            }
+            currentMap = node.getChildren();
+        }
+        return startWithList;
+    }
+
+    private void getStringsWithPrefix(String prefix, Map<Character, Node> currentMap, List<String> startWithList) {
+        if(currentMap != null) {
+            currentMap.forEach((key, value) -> {
+                if(value.isWord) {
+                    startWithList.add(prefix + key);
+                }
+                getStringsWithPrefix((prefix + key), value.getChildren(), startWithList);
+            });
+        }
+    }
+
     static class Node {
         private boolean isWord;
         private Map<Character, Node> children;
@@ -73,5 +102,9 @@ public class Trie {
         System.out.println(trie.search("Mole"));
         System.out.println(trie.search("Molee"));
         System.out.println(trie.search("Madan"));
+
+        System.out.println(trie.startsWith("Mada"));
+        System.out.println(trie.startsWith("Ma"));
+        System.out.println(trie.startsWith("M"));
     }
 }
