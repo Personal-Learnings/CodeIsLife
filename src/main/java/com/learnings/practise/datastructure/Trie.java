@@ -6,11 +6,11 @@ public class Trie {
 
     private Node data;
 
-    Trie() {
+    public Trie() {
         data = new Node(new HashMap<>(), false);
     }
 
-    private void insert(String word) {
+    public void insert(String word) {
         char[] chars = word.toCharArray();
         Map<Character, Node> currentMap = data.getChildren();
 
@@ -39,7 +39,7 @@ public class Trie {
         return "Not Found";
     }
 
-    private List<String> startsWith(String prefix) {
+    public List<String> startsWith(String prefix) {
         char [] chars = prefix.toCharArray();
         Map<Character, Node> currentMap = data.getChildren();
         List<String> startWithList = new ArrayList<>();
@@ -67,6 +67,28 @@ public class Trie {
                 getStringsWithPrefix((prefix + key), value.getChildren(), startWithList);
             });
         }
+    }
+
+    public List<String> startsWithAndHas(String inputString) {
+        char [] charArray = inputString.toCharArray();
+        StringBuilder sequence = new StringBuilder();
+        List<String> startWithList = new ArrayList<>();
+
+        Map<Character, Node> currentMap = data.getChildren();
+
+        for (Character currentChar : charArray) {
+            sequence.append(currentChar);
+            Node node = currentMap.get(currentChar);
+
+            if (node == null) {
+                return startWithList;
+            }
+            if (node.isWord) {
+                startWithList.add(sequence.toString());
+            }
+            currentMap = node.getChildren();
+        }
+        return startWithList;
     }
 
     static class Node {
