@@ -110,7 +110,7 @@ public class ScrabbleSolver {
         String fileName = System. getProperty("user.dir") + "/src/main/java/com/learnings/practise/problems/trie/dictionary.txt";
         ScrabbleSolver scrabbleSolver = new ScrabbleSolver();
         scrabbleSolver.constructData(Paths.get(fileName));
-        Set<String> wordsFoundInDictionary = scrabbleSolver.getValidWordsFromGivenLetters("hat");
+        Set<String> wordsFoundInDictionary = scrabbleSolver.getValidWordsFromGivenLetters("jayashree");
 
         PriorityQueue<ScrabbleVO> priorityQueue = new PriorityQueue<>(Comparator.comparing(ScrabbleVO::getScrabbleValue).reversed());
         wordsFoundInDictionary.forEach(word -> {

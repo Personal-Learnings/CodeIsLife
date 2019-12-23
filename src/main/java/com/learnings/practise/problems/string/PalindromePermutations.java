@@ -2,6 +2,7 @@ package com.learnings.practise.problems.string;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class PalindromePermutations {
@@ -43,6 +44,9 @@ public class PalindromePermutations {
         System.out.println("Input: " + inputString + " Output: " + palindromePermutations.isPalindromePermutation_BigO_N_Extended_ASCII(inputString));
 
         inputString = "ASASA";
+        System.out.println("Input: " + inputString + " Output: " + palindromePermutations.isPalindromePermutation_BigO_N_Extended_ASCII(inputString));
+
+        inputString = "CCC";
         System.out.println("Input: " + inputString + " Output: " + palindromePermutations.isPalindromePermutation_BigO_N_Extended_ASCII(inputString));
 
         System.out.println("----------------------------------------------");

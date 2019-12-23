@@ -1,5 +1,7 @@
 package com.learnings.practise.datastructure;
 
+import java.util.TreeMap;
+
 public class LinkedListFasterAdd<T> {
 
     private Node<T> headNode;
@@ -17,7 +19,6 @@ public class LinkedListFasterAdd<T> {
             tailNode.setReference(newNode);
             tailNode = newNode;
         }
-        ++size;
     }
 
     private void remove(T data) {
