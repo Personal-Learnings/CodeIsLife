@@ -9,8 +9,9 @@ public class CriticalConnectionsInANetwork {
     private int[] startTime;
     private int[] lowLink;
     private boolean[] visited;
-    private int time = 0;
+    private int time = -1;
 
+    //Its good to start with HashMap version, if it times out i will got to the below approach
     //Time Complexity: O(V+E) for depth first search
     //Space Complexity: O(V+E)
     public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
@@ -27,6 +28,7 @@ public class CriticalConnectionsInANetwork {
     }
 
     private void traverseDepthFirst(int vertex, int parent) {
+        System.out.println("Vertex: " + vertex + " Parent: " + parent);
         visited[vertex] = true;
         startTime[vertex] = ++time;
         lowLink[vertex] = startTime[vertex];
@@ -44,6 +46,8 @@ public class CriticalConnectionsInANetwork {
             } else {
                 lowLink[vertex] = Math.min(lowLink[vertex], startTime[edge]);
             }
+
+            System.out.println("Edge: " + edge + " LowLink: " + lowLink[edge] + " Start Time: " + startTime[edge]);
         }
     }
 
@@ -60,6 +64,7 @@ public class CriticalConnectionsInANetwork {
 
     //Time Complexity: O(V+E) for depth first search
     //Space Complexity: O(V+E) (Leet Code throws Timeout Exception but its good)
+    //I would prefer this one first if this timesout i will change the code to the Top One
     //Hashmap Implementation
     /*private Map<Integer, List<Integer>> graph;
     private List<List<Integer>> criticalConnections;
@@ -119,6 +124,9 @@ public class CriticalConnectionsInANetwork {
     public static void main(String[] args) {
         System.out.println("Critical Connections: " + new CriticalConnectionsInANetwork().criticalConnections(4, Arrays.asList(
                 Arrays.asList(0, 1), Arrays.asList(1, 2), Arrays.asList(2, 0), Arrays.asList(1, 3)
+        )));
+        System.out.println("Critical Connections: " + new CriticalConnectionsInANetwork().criticalConnections(5, Arrays.asList(
+                Arrays.asList(0, 1), Arrays.asList(0, 3), Arrays.asList(0, 4), Arrays.asList(4, 2)
         )));
     }
 }
