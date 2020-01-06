@@ -28,7 +28,6 @@ public class CriticalConnectionsInANetwork {
     }
 
     private void traverseDepthFirst(int vertex, int parent) {
-        System.out.println("Vertex: " + vertex + " Parent: " + parent);
         visited[vertex] = true;
         startTime[vertex] = ++time;
         lowLink[vertex] = startTime[vertex];
@@ -46,8 +45,6 @@ public class CriticalConnectionsInANetwork {
             } else {
                 lowLink[vertex] = Math.min(lowLink[vertex], startTime[edge]);
             }
-
-            System.out.println("Edge: " + edge + " LowLink: " + lowLink[edge] + " Start Time: " + startTime[edge]);
         }
     }
 

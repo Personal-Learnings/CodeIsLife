@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/LongestSubstringWithKDistinctCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/MaxSumSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/SmallestSubArrayGivenSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -9,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/CriticalConnectionsInANetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/CriticalConnectionsInANetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/trie" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -55,7 +60,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CriticalConnectionsInANetwork">
+  <component name="RunManager" selected="Application.LongestSubstringWithKDistinctCharacters">
     <configuration name="CriticalConnectionsInANetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.CriticalConnectionsInANetwork" />
       <module name="CodeIsLife.main" />
@@ -69,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestAbsoluteFilePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.LongestAbsoluteFilePath" />
+    <configuration name="LongestSubstringWithKDistinctCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.LongestSubstringWithKDistinctCharacters" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.LongestPalindrome" />
+    <configuration name="LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.LongestSubstringWithoutRepeatingCharacters" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrisonCellsAfterNDays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.PrisonCellsAfterNDays" />
+    <configuration name="MaxSumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.MaxSumSubArray" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.TrappingRainWater" />
+    <configuration name="SmallestSubArrayGivenSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.SmallestSubArrayGivenSum" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -123,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestSubstringWithKDistinctCharacters" />
+        <item itemvalue="Application.SmallestSubArrayGivenSum" />
+        <item itemvalue="Application.MaxSumSubArray" />
+        <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Application.CriticalConnectionsInANetwork" />
-        <item itemvalue="Application.LongestPalindrome" />
-        <item itemvalue="Application.TrappingRainWater" />
-        <item itemvalue="Application.PrisonCellsAfterNDays" />
-        <item itemvalue="Application.LongestAbsoluteFilePath" />
       </list>
     </recent_temporary>
   </component>
@@ -187,64 +192,64 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="356" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1577510906539" />
-    <state x="506" y="308" width="755" height="579" key="#xdebugger.evaluate" timestamp="1577942445072">
+    <state x="655" y="308" width="755" height="579" key="#xdebugger.evaluate" timestamp="1578171109801">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="506" y="308" width="785" height="592" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1577942445072" />
+    <state x="655" y="308" width="785" height="592" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1578171109801" />
     <state x="560" y="461" width="755" height="579" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1577676159191" />
     <state x="577" y="222" width="759" height="678" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1577519287817" />
-    <state width="479" height="466" key="DebuggerActiveHint" timestamp="1578018610672">
+    <state width="479" height="466" key="DebuggerActiveHint" timestamp="1578171293289">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="479" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1578018610672" />
+    <state width="479" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1578171293289" />
     <state width="639" height="561" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1577674556014" />
     <state width="479" height="455" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1577519891715" />
-    <state width="1398" height="140" key="GridCell.Tab.0.bottom" timestamp="1578019521556">
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1578278615003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="140" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578019521556" />
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578278615003" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139050" />
     <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1577760585509" />
-    <state width="1398" height="140" key="GridCell.Tab.0.center" timestamp="1578019521554">
+    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1578278615001">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="140" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578019521554" />
+    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578278615001" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139048" />
     <state width="1398" height="298" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1577760585507" />
-    <state width="1398" height="140" key="GridCell.Tab.0.left" timestamp="1578019521553">
+    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1578278615000">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="140" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578019521553" />
+    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578278615000" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139047" />
     <state width="1398" height="298" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1577760585506" />
-    <state width="1398" height="140" key="GridCell.Tab.0.right" timestamp="1578019521555">
+    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1578278615002">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="140" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578019521555" />
+    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578278615002" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139049" />
     <state width="1398" height="298" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1577760585631" />
-    <state width="1398" height="297" key="GridCell.Tab.1.bottom" timestamp="1578019390200">
+    <state width="1398" height="297" key="GridCell.Tab.1.bottom" timestamp="1578271168810">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="297" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578019390200" />
+    <state width="1398" height="297" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578271168810" />
     <state width="1878" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033090" />
     <state width="1398" height="298" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1577760585513" />
-    <state width="1398" height="297" key="GridCell.Tab.1.center" timestamp="1578019390197">
+    <state width="1398" height="297" key="GridCell.Tab.1.center" timestamp="1578271168808">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="297" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578019390197" />
+    <state width="1398" height="297" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578271168808" />
     <state width="1878" height="368" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033088" />
     <state width="1398" height="298" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1577760585511" />
-    <state width="1398" height="297" key="GridCell.Tab.1.left" timestamp="1578019390196">
+    <state width="1398" height="297" key="GridCell.Tab.1.left" timestamp="1578271168807">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="297" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578019390196" />
+    <state width="1398" height="297" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578271168807" />
     <state width="1878" height="368" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033086" />
     <state width="1398" height="298" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1577760585510" />
-    <state width="1398" height="297" key="GridCell.Tab.1.right" timestamp="1578019390199">
+    <state width="1398" height="297" key="GridCell.Tab.1.right" timestamp="1578271168809">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="297" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578019390199" />
+    <state width="1398" height="297" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578271168809" />
     <state width="1878" height="368" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033089" />
     <state width="1398" height="298" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1577760585512" />
     <state x="308" y="310" key="Performance.Activity.Monitor" timestamp="1577759578497">
@@ -255,9 +260,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="536" y="375" key="ReplaceDuplicatesPrompt/0.0.1440.900@0.0.1440.900" timestamp="1576440804362" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1577515366493">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="458" y="0" key="SettingsEditor" timestamp="1578103113269">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="458" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578103113269" />
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1577515366493" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577148635867">
       <screen x="0" y="0" width="1440" height="900" />
@@ -379,8 +385,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/CriticalConnectionsInANetwork.java</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/LongestSubstringWithoutRepeatingCharacters.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/MaxSumSubArray.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
