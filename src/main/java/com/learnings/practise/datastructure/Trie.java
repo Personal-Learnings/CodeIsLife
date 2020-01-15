@@ -125,7 +125,9 @@ public class Trie {
         System.out.println(trie.search("Molee"));
         System.out.println(trie.search("Madan"));
 
-        System.out.println(trie.startsWith("Mada"));
+        System.out.println(">>>" + trie.startsWith("Mada"));
+        System.out.println(trie.startsWithAndHas("Madan"));
+
         System.out.println(trie.startsWith("Ma"));
         System.out.println(trie.startsWith("M"));
     }

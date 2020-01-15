@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public class ReorderDataInLogFiles {
 
-    public String[] reorderLogFiles_BigO_N(String[] logs) {
+    public String[] reorderLogFiles(String[] logs) {
 
         TreeMap<String, String> letterLogs = new TreeMap<>();
         List<String> digitLogs = new ArrayList<>();
@@ -31,5 +31,4 @@ public class ReorderDataInLogFiles {
         outputLogs.addAll(digitLogs);
         return outputLogs.toArray(new String[0]);
     }
-
 }
