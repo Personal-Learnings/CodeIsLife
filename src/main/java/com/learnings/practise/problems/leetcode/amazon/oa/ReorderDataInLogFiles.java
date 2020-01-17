@@ -68,5 +68,8 @@ public class ReorderDataInLogFiles {
         System.out.println(Arrays.toString(new ReorderDataInLogFiles().reorderLogFiles(
                 new String[] {"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo","a2 act car"}
         )));
+        System.out.println(Arrays.toString(new ReorderDataInLogFiles().reorderLogFiles_1(
+                new String[] {"dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let4 art zero aaa", "let3 art zero"}
+        )));
     }
 }

@@ -1,19 +1,16 @@
 package com.learnings.practise.problems.leetcode.amazon.oa;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class FindClosestToTarget_OptimalUtilization {
 
+    /** Time Complexity O(ab) where a and b are the two input arrays */
     private List<List<Integer>> findClosestToTarget(int [][] a, int [][] b, int target) {
 
         if(a == null || a.length == 0 || b == null || b.length == 0) return Collections.emptyList();
 
-        int k = 0;
         int max = Integer.MIN_VALUE;
-        List<Integer> maxIndex = new ArrayList<>();
+        List<Integer> maxIndex = new ArrayList<>(2);
         List<List<Integer>> result = new ArrayList<>();
 
         for(int i = 0; i < a.length; i++) {
@@ -21,15 +18,30 @@ public class FindClosestToTarget_OptimalUtilization {
                 int sum = a[i][1] + b[j][1];
                 if(sum == target) {
                     result.add(Arrays.asList(a[i][0], b[j][0]));
-                    k++;
                 } else if(sum < target && sum > max) {
                     max = sum;
                     maxIndex = Arrays.asList(a[i][0], b[j][0]);
                 }
             }
         }
-        if(k == 0) result.add(maxIndex);
-        return result;
+        return result.isEmpty() ? Collections.singletonList(maxIndex) : result;
+    }
+
+    /** Time Complexity O(A*B*logN)*/
+    private static List<List<Integer>> findClosestToTarget_1(int[][] a, int[][] b, int target) {
+        TreeMap<Integer, List<List<Integer>>> tree = new TreeMap<>();
+
+        for (int i=0; i<a.length; i++) {
+            for (int j=0; j<b.length; j++) {
+                int sum = a[i][1] + b[j][1];
+                if (sum <= target) {
+                    List<List<Integer>> list = tree.computeIfAbsent(sum, (k) -> new ArrayList<>());
+                    list.add(Arrays.asList(a[i][0], b[j][0]));
+                }
+            }
+        }
+
+        return tree.floorEntry(target).getValue();
     }
 
     public static void main(String[] args) {

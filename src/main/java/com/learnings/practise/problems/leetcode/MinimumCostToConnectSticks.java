@@ -6,6 +6,21 @@ import java.util.Stack;
 
 public class MinimumCostToConnectSticks {
 
+    public int connectSticks(int[] sticks) {
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        for (int stick : sticks) {
+            queue.offer(stick);
+        }
+
+        int result = 0;
+        while (queue.size() > 1) {
+            int sum = queue.poll() + queue.poll();
+            queue.offer(sum);
+            result += sum;
+        }
+        return result;
+    }
+
     public int connectSticks_slower_Stack(int[] sticks) {
         Arrays.sort(sticks);
         int sum = 0;
@@ -24,21 +39,6 @@ public class MinimumCostToConnectSticks {
 
         while(!spent.isEmpty()) {
             result += spent.pop();
-        }
-        return result;
-    }
-
-    public int connectSticks(int[] sticks) {
-        PriorityQueue<Integer> queue = new PriorityQueue<>();
-        for (int stick : sticks) {
-            queue.offer(stick);
-        }
-
-        int result = 0;
-        while (queue.size() > 1) {
-            int sum = queue.poll() + queue.poll();
-            queue.offer(sum);
-            result += sum;
         }
         return result;
     }
