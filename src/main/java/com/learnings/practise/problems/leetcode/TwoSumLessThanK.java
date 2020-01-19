@@ -35,4 +35,9 @@ public class TwoSumLessThanK {
         }
         return s;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new TwoSumLessThanK().twoSumLessThanK_BigO_nlogn(new int[] {1, 8, 12, 7, 13, 23, 6}, 19));
+        System.out.println(new TwoSumLessThanK().twoSumLessThanK_BigO_nlogn(new int[] {1, 8, 12, 7, 13, 23, 6}, 10));
+    }
 }

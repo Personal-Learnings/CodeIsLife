@@ -1,4 +1,4 @@
-package com.learnings.practise.problems.leetcode.amazon.oa;
+package com.learnings.practise.problems.leetcode.an;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

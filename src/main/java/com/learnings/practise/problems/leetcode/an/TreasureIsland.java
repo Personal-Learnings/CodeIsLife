@@ -1,19 +1,19 @@
-package com.learnings.practise.problems.leetcode.amazon.oa;
+package com.learnings.practise.problems.leetcode.an;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class TreasureIsland {
 
-    // Sailing Directions
-    private int [][] SIDES = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-
     /**
-     * Time Complexity: O(R * C) where R is number of rows and C is no of columns in matrix
-     * Space Complexity: O(R * C) where R is number of rows and C is no of columns in matrix
+     * Time Complexity: O(R * C) where R is number of rows and C is no of columns in map
+     * Space Complexity: O(R * C) where R is number of rows and C is no of columns in map
      */
     private int getMinDistanceToTreasureIsland(char [][] map) {
         if(map == null || map.length == 0) return 0;
+
+        // Sailing Directions
+        int [][] SIDES = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int steps = 0;
 
         Queue<int[]> queue = new ArrayDeque<>();
