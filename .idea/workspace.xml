@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/FindPairWithGivenSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/TreasureIslandII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/CriticalConnections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/MergeTwoSortedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/SubtreeOfAnotherTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/CopyListWithRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/TwoSumLessThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/TwoSumLessThanK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/TreasureIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/TreasureIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/MergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/SubtreeOfAnotherTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/SubtreeOfAnotherTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,30 +198,30 @@
     <state width="493" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1578972297394" />
     <state width="639" height="561" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1577674556014" />
     <state width="479" height="455" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1579445144754" />
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1579449503993">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom" timestamp="1579453858399">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579232109827" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139050" />
-    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579449503993" />
-    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1579449503991">
+    <state width="1398" height="227" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579453858399" />
+    <state width="1398" height="227" key="GridCell.Tab.0.center" timestamp="1579453858398">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579232109825" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139048" />
-    <state width="1398" height="227" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579449503991" />
-    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1579449503991">
+    <state width="1398" height="227" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579453858398" />
+    <state width="1398" height="227" key="GridCell.Tab.0.left" timestamp="1579453858397">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579232109824" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139047" />
-    <state width="1398" height="227" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579449503991" />
-    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1579449503992">
+    <state width="1398" height="227" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579453858397" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right" timestamp="1579453858399">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579232109826" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139049" />
-    <state width="1398" height="227" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579449503992" />
+    <state width="1398" height="227" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579453858399" />
     <state width="1398" height="327" key="GridCell.Tab.1.bottom" timestamp="1579448128425">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -303,12 +296,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1576722120531" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1579448973203">
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1579495538732">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1579231394356" />
     <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577498853701" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579448973203" />
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579495538732" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,27 +397,27 @@
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/TopNBuzzwords.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/TopNBuzzwords.java</url>
           <line>49</line>
           <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/ZombieInMatrix.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/ZombieInMatrix.java</url>
           <line>52</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/CriticalRouters.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/CriticalRouters.java</url>
           <line>26</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/FindPairWithGivenSum.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/FindPairWithGivenSum.java</url>
           <line>83</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/amazon/oa/FindPairWithGivenSum.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/FindPairWithGivenSum.java</url>
           <line>80</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
