@@ -5,6 +5,11 @@ import java.util.Queue;
 
 public class ZombieInMatrix {
 
+    /**
+     * Time Complexity: O(r * c) where r => number of rows and c => number of columns
+     * Space Complexity: O(r * c) where r => number of rows and c => number of columns
+     * Also Known as Min hours to send file to all available servers
+     */
     private int getHoursTakenToInfect(int [][] matrix) {
         if(matrix == null || matrix.length == 0) return 0;
 
