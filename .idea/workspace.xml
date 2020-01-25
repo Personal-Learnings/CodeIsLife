@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/LongestPalindromicSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/MaxOfMinAltitudes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/KClosestPointsToOrigin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/MostCommonWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/SubstringsOfSizeKWithKDistinctChars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/ZombieInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/ZombieInMatrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -59,7 +60,20 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestPalindromicSubstring">
+  <component name="RunManager" selected="Application.KClosestPointsToOrigin">
+    <configuration name="KClosestPointsToOrigin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.KClosestPointsToOrigin" />
+      <module name="CodeIsLife.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnings.practise.problems.leetcode.an.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.LongestPalindromicSubstring" />
       <module name="CodeIsLife.main" />
@@ -86,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralMatrixII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.SpiralMatrixII" />
+    <configuration name="MostCommonWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.MostCommonWord" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -99,21 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubstringsWithKDistinctChars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.SubstringsWithKDistinctChars" />
-      <module name="CodeIsLife.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learnings.practise.problems.leetcode.an.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TwoSumUniquePairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.TwoSumUniquePairs" />
+    <configuration name="SubstringsOfSizeKWithKDistinctChars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.an.SubstringsOfSizeKWithKDistinctChars" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KClosestPointsToOrigin" />
+        <item itemvalue="Application.MostCommonWord" />
+        <item itemvalue="Application.SubstringsOfSizeKWithKDistinctChars" />
         <item itemvalue="Application.LongestPalindromicSubstring" />
         <item itemvalue="Application.MaxOfMinAltitudes" />
-        <item itemvalue="Application.SubstringsWithKDistinctChars" />
-        <item itemvalue="Application.SpiralMatrixII" />
-        <item itemvalue="Application.TwoSumUniquePairs" />
       </list>
     </recent_temporary>
   </component>
@@ -203,30 +204,30 @@
     <state width="493" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1579784426589" />
     <state width="639" height="561" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1577674556014" />
     <state width="479" height="455" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1579445144754" />
-    <state width="1398" height="256" key="GridCell.Tab.0.bottom" timestamp="1579934327031">
+    <state width="1398" height="256" key="GridCell.Tab.0.bottom" timestamp="1579980816111">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579784905190" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139050" />
-    <state width="1398" height="256" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579934327031" />
-    <state width="1398" height="256" key="GridCell.Tab.0.center" timestamp="1579934327029">
+    <state width="1398" height="256" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579980816111" />
+    <state width="1398" height="256" key="GridCell.Tab.0.center" timestamp="1579980816109">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579784905186" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139048" />
-    <state width="1398" height="256" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579934327029" />
-    <state width="1398" height="256" key="GridCell.Tab.0.left" timestamp="1579934327029">
+    <state width="1398" height="256" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579980816109" />
+    <state width="1398" height="256" key="GridCell.Tab.0.left" timestamp="1579980816109">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579784905181" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139047" />
-    <state width="1398" height="256" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579934327029" />
-    <state width="1398" height="256" key="GridCell.Tab.0.right" timestamp="1579934327030">
+    <state width="1398" height="256" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579980816109" />
+    <state width="1398" height="256" key="GridCell.Tab.0.right" timestamp="1579980816110">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579784905188" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139049" />
-    <state width="1398" height="256" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579934327030" />
+    <state width="1398" height="256" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579980816110" />
     <state width="1398" height="206" key="GridCell.Tab.1.bottom" timestamp="1579915363114">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -272,11 +273,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1577148635867" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1579579854226">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1579969982414">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579579854226" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1576905909307" />
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1579969982414" />
     <state x="458" y="224" width="524" height="456" key="extract.method.dialog" timestamp="1576440787042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -301,12 +302,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1576722120531" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1579931180657">
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1579980042860">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1579750867574" />
     <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577498853701" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579931180657" />
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1579980042860" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
