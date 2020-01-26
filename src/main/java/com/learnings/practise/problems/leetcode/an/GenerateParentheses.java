@@ -8,6 +8,7 @@ public class GenerateParentheses {
 
     private static final String OPEN = "(";
     private static final String CLOSE = ")";
+
     /**
      * Time Complexity: O(2^n) Every time you go down the recursive tree we are growing by double
      * Space Complexity: O(2^n) Every time you go down the recursive tree we are growing by double and using 2^n space
