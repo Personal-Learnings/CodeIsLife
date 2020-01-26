@@ -12,6 +12,14 @@ public class CriticalRouters {
     private int counter = -1;
     private int [] endTimes;
 
+    /**
+     * If Indexes are not starting from zero refer the Critical Connections
+     */
+
+    /**
+     * Time Complexity: O(V + E) where V is the number of vertices and E is the number of edges.
+     * Space Complexity: O(V + E) where V is the number of vertices and E is the number of edges.
+     */
     private List<Integer> getCriticalRouters(int numNodes, List<List<Integer>> connections) {
 
         if(connections == null || connections.isEmpty() || numNodes == 0) return Collections.emptyList();

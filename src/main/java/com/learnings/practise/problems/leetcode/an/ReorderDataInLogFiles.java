@@ -4,6 +4,7 @@ import java.util.*;
 
 public class ReorderDataInLogFiles {
 
+    //if this doesn't work choose the bottom one
     //Time Complexity: O(NLogN*C) Where N is the number of logs and C is the characters in the logs (Assuming new Java Substring would take O(N) Time)
     public String[] reorderLogFiles(String[] logs) {
         if (logs == null || logs.length == 0) return new String[]{};
@@ -28,6 +29,12 @@ public class ReorderDataInLogFiles {
         return outputLogs.toArray(new String[logs.length]);
     }
 
+    //If the Top one fails we can use this one
+
+    /**
+     * Time Complexity: O(L Log L) where L -> Number of logs
+     * Space Complexity: O(1)
+     */
     public String[] reorderLogFiles_1(String[] logs) {
         if(logs == null || logs.length == 0) return new String[]{};
 

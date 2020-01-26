@@ -7,7 +7,6 @@ public class CriticalConnections {
     /**
      * When the vertices do not start from 0 and are not in sequence and an List<PairInt></PairInt> is given as input instead of a List<List<Integer>>
      */
-
     //Creating as instance variables assuming its not a multi-threaded environment and to avoid passing objects over and over to the recursive function.
     private int time = 0;
     private List<List<Integer>> bridges;
