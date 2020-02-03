@@ -1,6 +1,7 @@
 package com.learnings.practise.algorithm;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class QuickSort {
 
@@ -11,20 +12,35 @@ public class QuickSort {
 
     private void partitionAndSort(int[] array, int startIndex, int endIndex) {
         if(startIndex >= endIndex) return;
-        int pivot = array[endIndex];
-        int newPivotIndex = 0;
+
+        int partitionIndex = getPartitionIndex(array, endIndex);
+        partitionAndSort(array, startIndex, partitionIndex - 2);
+        partitionAndSort(array, partitionIndex, endIndex);
+    }
+
+    private int getPartitionIndex(int[] array, int endIndex) {
+        int pivot = getPivot(array, endIndex);
+        int partitionIndex = 0;
 
         for(int i = 0; i <= endIndex; i++) {
             if(array[i] <= pivot) {
-                int temp = array[newPivotIndex];
-                array[newPivotIndex] = array[i];
+                int temp = array[partitionIndex];
+                array[partitionIndex] = array[i];
                 array[i] = temp;
-                newPivotIndex++;
+                partitionIndex++;
             }
         }
+        return partitionIndex;
+    }
 
-        partitionAndSort(array, startIndex, newPivotIndex - 2);
-        partitionAndSort(array, newPivotIndex, endIndex);
+    private int getPivot(int[] array, int endIndex) {
+        return array[endIndex];
+    }
+
+    private int getRandomPivot(int[] array, int endIndex) {
+        //Instead of picking the last index always for quick sort we can pick a pick using random to avoid O(n^2) when the array is already sorted.
+        //Randomizing the pivot will make the performance to O(n log n) in average and worst case too.
+        return 0;
     }
 
     public static void main(String[] args) {

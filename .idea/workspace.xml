@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/algorithm/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/algorithm/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/algorithm/QuickSort.java" afterDir="false" />
     </list>
-    <list id="9a5c7d34-ab8e-414c-bc2d-24cf67b1235a" name="merge" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/algorithm/MergeSort.java" afterDir="false" />
-    </list>
+    <list id="9a5c7d34-ab8e-414c-bc2d-24cf67b1235a" name="merge" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,30 +217,30 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1580079544882" />
-    <state width="1398" height="248" key="GridCell.Tab.0.bottom" timestamp="1580705341472">
+    <state width="1398" height="248" key="GridCell.Tab.0.bottom" timestamp="1580705384272">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579784905190" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139050" />
-    <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580705341472" />
-    <state width="1398" height="248" key="GridCell.Tab.0.center" timestamp="1580705341471">
+    <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580705384272" />
+    <state width="1398" height="248" key="GridCell.Tab.0.center" timestamp="1580705384270">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579784905186" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139048" />
-    <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580705341471" />
-    <state width="1398" height="248" key="GridCell.Tab.0.left" timestamp="1580705341470">
+    <state width="1398" height="248" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580705384270" />
+    <state width="1398" height="248" key="GridCell.Tab.0.left" timestamp="1580705384269">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579784905181" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139047" />
-    <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580705341470" />
-    <state width="1398" height="248" key="GridCell.Tab.0.right" timestamp="1580705341471">
+    <state width="1398" height="248" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580705384269" />
+    <state width="1398" height="248" key="GridCell.Tab.0.right" timestamp="1580705384271">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="299" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579784905188" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139049" />
-    <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580705341471" />
+    <state width="1398" height="248" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580705384271" />
     <state width="1398" height="242" key="GridCell.Tab.1.bottom" timestamp="1580705197103">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -278,10 +269,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="310" key="Performance.Activity.Monitor/0.0.1440.900@0.0.1440.900" timestamp="1577759578497" />
-    <state x="536" y="375" key="ReplaceDuplicatesPrompt" timestamp="1576440804362">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="536" y="388" key="ReplaceDuplicatesPrompt" timestamp="1580707693041">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="536" y="375" key="ReplaceDuplicatesPrompt/0.0.1440.900@0.0.1440.900" timestamp="1576440804362" />
+    <state x="536" y="388" key="ReplaceDuplicatesPrompt/0.23.1440.877@0.23.1440.877" timestamp="1580707693041" />
     <state x="417" y="179" key="RollbackChangesDialog" timestamp="1580079384870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -305,11 +297,11 @@
     </state>
     <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579579854226" />
     <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1580700108744" />
-    <state x="458" y="241" width="524" height="456" key="extract.method.dialog" timestamp="1580700163088">
+    <state x="458" y="241" width="524" height="484" key="extract.method.dialog" timestamp="1580707684544">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="224" width="524" height="456" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1576440787042" />
-    <state x="458" y="241" key="extract.method.dialog/0.23.1440.877@0.23.1440.877" timestamp="1580700163088" />
+    <state x="458" y="241" width="524" height="484" key="extract.method.dialog/0.23.1440.877@0.23.1440.877" timestamp="1580707684544" />
     <state x="283" y="98" width="1022" height="729" key="find.popup" timestamp="1580080907428">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
