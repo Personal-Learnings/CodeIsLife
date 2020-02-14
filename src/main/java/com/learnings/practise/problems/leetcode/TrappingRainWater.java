@@ -2,10 +2,32 @@ package com.learnings.practise.problems.leetcode;
 
 public class TrappingRainWater {
 
+    /**
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
+     * Approach: Two Pointer Technique
+     */
+    public int trap(int [] height) {
+        if(height == null || height.length < 3) return 0;
+
+        int start = 0, end = height.length - 1, water = 0;
+        while(start < end) {
+            if(height[start] <= height[end]) {
+                int current = height[start];
+                while(current > height[++start]) water += (current - height[start]);
+            }
+            else {
+                int current = height[end];
+                while(current > height[--end]) water += (current - height[end]);
+            }
+        }
+        return water;
+    }
+
     private int [] a;
 
     //Time Complexity: O(N^2) Space Complexity O(1)
-    public int trap(int[] height) {
+    public int trap_slower(int[] height) {
 
         a = height;
         int result = 0;
@@ -32,6 +54,6 @@ public class TrappingRainWater {
     }
 
     public static void main(String[] args) {
-        System.out.println(new TrappingRainWater().trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(new TrappingRainWater().trap_slower(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
     }
 }

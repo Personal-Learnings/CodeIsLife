@@ -83,23 +83,13 @@ public class TopNBuzzwords {
     public static void main(String[] args) {
         System.out.println(
                 Arrays.toString(new TopNBuzzwords().getMostPopularToys(
-                        6, 3, new String[]{"zelmo", "elsa", "legos", "drone", "tablet", "warcraft"}, 6,
+                        6, 3, new String[]{ "elmo", "elsa", "legos", "drone", "tablet", "warcraft" }, 6,
                         new String[]{
-                                "ZElmo is the hottest of the season! ZElmo will be on every kid's wishlist!",
-                                "The new ZElmo dolls are super high quality",
+                                "Elmo Elmo Elmo is the hottest of the season! Elmo will be on every kid's wishlist!",
+                                "The new dolls are super high quality",
                                 "Expect the Elsa dolls to be very popular this year, Elsa!",
-                                "Elsa and ZElmo are the toys I'll be buying for my kids, Elsa is good",
-                                "Elsa are the toys I'll be buying for my kids, Elsa is good",
-                                " Elsa and ZElmo ZElmo ZElmo are the toys I'll be buying for my kids, Elsa is good",
-                                "ZElmo ZElmo Elsa",
-                                "ZElmo Elsa",
+                                "Elsa and are the toys I'll be buying for my kids, Elsa is good",
                                 "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone",
-                                "For parents of older kids, look into buying them a drone drone drone drone",
                                 "Warcraft is slowly rising in popularity ahead of the holiday season"}
                 ))
         );
