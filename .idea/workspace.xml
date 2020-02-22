@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/BinaryTreeRightSideView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/LowestCommonAncestorOfBinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/LowestCommonAncestorOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/MaximumDepthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/MinimumDepthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/ValidateBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Builder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/CompareVersionNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/PopulatingNextRightPointersInEachNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/RotateImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/StringToInteger_ATOI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,7 +21,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mjyashhome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mjyashhome.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
     </list>
     <list id="9a5c7d34-ab8e-414c-bc2d-24cf67b1235a" name="merge" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="UML Class" />
         <option value="Class" />
       </list>
     </option>
@@ -50,11 +58,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/trie" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -68,9 +77,9 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LowestCommonAncestorOfBinaryTree">
-    <configuration name="BinarySearchTreeToGreaterSumTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.BinarySearchTreeToGreaterSumTree" />
+  <component name="RunManager" selected="Application.CompareVersionNumbers">
+    <configuration name="CompareVersionNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.CompareVersionNumbers" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +91,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LowestCommonAncestorOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.LowestCommonAncestorOfBinaryTree" />
+    <configuration name="Decorator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.designpatterns.Decorator" />
+      <module name="CodeIsLife.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnings.practise.designpatterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Observer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.designpatterns.Observer" />
+      <module name="CodeIsLife.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnings.practise.designpatterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.RotateImage" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -95,34 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeDFSRecursiveAndIterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.TreeDFSRecursiveAndIterative" />
-      <module name="CodeIsLife.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learnings.practise.problems.leetcode.general.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidateBinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.ValidateBinarySearchTree" />
-      <module name="CodeIsLife.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learnings.practise.problems.leetcode.general.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VerticalOrderTraversalOfABinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.VerticalOrderTraversalOfABinaryTree" />
+    <configuration name="StringToInteger_ATOI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnings.practise.problems.leetcode.general.StringToInteger_ATOI" />
       <module name="CodeIsLife.main" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LowestCommonAncestorOfBinaryTree" />
-        <item itemvalue="Application.ValidateBinarySearchTree" />
-        <item itemvalue="Application.TreeDFSRecursiveAndIterative" />
-        <item itemvalue="Application.BinarySearchTreeToGreaterSumTree" />
-        <item itemvalue="Application.VerticalOrderTraversalOfABinaryTree" />
+        <item itemvalue="Application.CompareVersionNumbers" />
+        <item itemvalue="Application.RotateImage" />
+        <item itemvalue="Application.StringToInteger_ATOI" />
+        <item itemvalue="Application.Observer" />
+        <item itemvalue="Application.Decorator" />
       </list>
     </recent_temporary>
   </component>
@@ -203,10 +212,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1576545735827" />
-    <state x="479" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1578540754182">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="479" y="177" key="#com.intellij.ide.util.MemberChooser" timestamp="1582302438944">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="479" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1578540754182" />
+    <state x="479" y="177" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1582302438944" />
     <state x="440" y="187" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1580699376052">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -216,78 +226,78 @@
     </state>
     <state x="356" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1577510906539" />
     <state x="356" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1582169851518" />
-    <state x="658" y="23" width="755" height="579" key="#xdebugger.evaluate" timestamp="1581564355616">
+    <state x="406" y="433" width="705" height="462" key="#xdebugger.evaluate" timestamp="1582353617816">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="655" y="308" width="785" height="592" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1581312513182" />
     <state x="560" y="461" width="755" height="579" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1577676159191" />
-    <state x="658" y="23" width="759" height="678" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1581564355616" />
-    <state width="749" height="455" key="DebuggerActiveHint" timestamp="1581998977483">
+    <state x="406" y="433" width="705" height="462" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1582353617816" />
+    <state width="749" height="455" key="DebuggerActiveHint" timestamp="1582393741625">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="493" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1581317669710" />
     <state width="639" height="561" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1577674556014" />
-    <state width="749" height="455" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1581998977483" />
+    <state width="749" height="455" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1582393741625" />
     <state width="999" height="549" key="DebuggerActiveHint/0.23.1920.1057@0.23.1920.1057" timestamp="1581897745179" />
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1580079544882">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1580079544882" />
-    <state width="1398" height="275" key="GridCell.Tab.0.bottom" timestamp="1582169822440">
+    <state width="1398" height="275" key="GridCell.Tab.0.bottom" timestamp="1582394970242">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="388" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581317812901" />
     <state width="1878" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139050" />
-    <state width="1398" height="275" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582169822440" />
+    <state width="1398" height="275" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582394970242" />
     <state width="1878" height="232" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1581898016618" />
-    <state width="1398" height="275" key="GridCell.Tab.0.center" timestamp="1582169822439">
+    <state width="1398" height="275" key="GridCell.Tab.0.center" timestamp="1582394970242">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="388" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581317812900" />
     <state width="1878" height="314" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139048" />
-    <state width="1398" height="275" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582169822439" />
+    <state width="1398" height="275" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582394970242" />
     <state width="1878" height="232" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1581898016616" />
-    <state width="1398" height="275" key="GridCell.Tab.0.left" timestamp="1582169822438">
+    <state width="1398" height="275" key="GridCell.Tab.0.left" timestamp="1582394970241">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="388" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581317812899" />
     <state width="1878" height="314" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139047" />
-    <state width="1398" height="275" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582169822438" />
+    <state width="1398" height="275" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582394970241" />
     <state width="1878" height="232" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1581898016616" />
-    <state width="1398" height="275" key="GridCell.Tab.0.right" timestamp="1582169822439">
+    <state width="1398" height="275" key="GridCell.Tab.0.right" timestamp="1582394970242">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="388" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581317812900" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577934139049" />
-    <state width="1398" height="275" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582169822439" />
+    <state width="1398" height="275" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582394970242" />
     <state width="1878" height="232" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1581898016617" />
-    <state width="1398" height="324" key="GridCell.Tab.1.bottom" timestamp="1582078245425">
+    <state width="1398" height="206" key="GridCell.Tab.1.bottom" timestamp="1582394970196">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581317744050" />
     <state width="1878" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033090" />
-    <state width="1398" height="324" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582078245425" />
+    <state width="1398" height="206" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582394970196" />
     <state width="1878" height="403" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1581897763571" />
-    <state width="1398" height="324" key="GridCell.Tab.1.center" timestamp="1582078245424">
+    <state width="1398" height="206" key="GridCell.Tab.1.center" timestamp="1582394970195">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1581317744049" />
     <state width="1878" height="368" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033088" />
-    <state width="1398" height="324" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1582078245424" />
+    <state width="1398" height="206" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1582394970195" />
     <state width="1878" height="403" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1581897763570" />
-    <state width="1398" height="324" key="GridCell.Tab.1.left" timestamp="1582078245423">
+    <state width="1398" height="206" key="GridCell.Tab.1.left" timestamp="1582394970194">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1581317744048" />
     <state width="1878" height="368" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033086" />
-    <state width="1398" height="324" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1582078245423" />
+    <state width="1398" height="206" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1582394970194" />
     <state width="1878" height="403" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1581897763569" />
-    <state width="1398" height="324" key="GridCell.Tab.1.right" timestamp="1582078245424">
+    <state width="1398" height="206" key="GridCell.Tab.1.right" timestamp="1582394970195">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1581317744049" />
     <state width="1878" height="368" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577930033089" />
-    <state width="1398" height="324" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1582078245424" />
+    <state width="1398" height="206" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1582394970195" />
     <state width="1878" height="403" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1581897763570" />
     <state x="308" y="310" key="Performance.Activity.Monitor" timestamp="1577759578497">
       <screen x="0" y="0" width="1440" height="900" />
@@ -302,11 +312,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="417" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1581820775517" />
-    <state x="458" y="0" key="SettingsEditor" timestamp="1578103113269">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1582230304645">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578103113269" />
-    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1577515366493" />
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582230304645" />
     <state x="574" y="386" key="VCS.ChangelistChooser" timestamp="1580700136369">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -316,11 +326,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1577148635867" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1582123283596">
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1582297687572">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579579854226" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582123283596" />
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582297687572" />
     <state x="458" y="241" width="524" height="484" key="extract.method.dialog" timestamp="1580707684544">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -337,6 +347,10 @@
     <state width="600" height="415" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1578980135361" />
     <state width="800" height="498" key="javadoc.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577599119627" />
     <state width="600" height="405" key="javadoc.popup/0.23.1440.877@0.23.1440.877" timestamp="1581047538873" />
+    <state x="0" y="23" width="100" height="100" key="net.trustx.simpleuml.components.BirdViewFrame" timestamp="1582231201624">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="23" width="100" height="100" key="net.trustx.simpleuml.components.BirdViewFrame/0.23.1440.877@0.23.1440.877" timestamp="1582231201624" />
     <state x="428" y="94" key="refactoring.ChangeSignatureDialog" timestamp="1581397345417">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -347,12 +361,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1576722120531" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1582086954996">
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1582391101191">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581315486713" />
     <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577498853701" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582086954996" />
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582391101191" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,5 +561,56 @@
     <SUITE FILE_PATH="coverage/CodeIsLife$BinarySearchTree.ic" NAME="BinarySearchTree Coverage Results" MODIFIED="1573188652529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.learnings.practise.datastructure.*</FILTER>
     </SUITE>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../Sample.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>

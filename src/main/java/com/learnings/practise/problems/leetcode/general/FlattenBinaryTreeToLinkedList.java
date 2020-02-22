@@ -1,7 +1,7 @@
 package com.learnings.practise.problems.leetcode.general;
 
 public class FlattenBinaryTreeToLinkedList {
-    
+
     private TreeNode previousNode = null;
 
     public void flatten(TreeNode root) {
