@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13ae60b-1ed6-421b-9142-80cd3e0d58c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Decorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/designpatterns/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/CompareVersionNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/PopulatingNextRightPointersInEachNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/RotateImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/StringToInteger_ATOI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mjyashhome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mjyashhome.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FirstUniqueCharacterInAString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/ReverseLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/BinaryTreeZigzagLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/BinaryTreeZigzagLevelOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/an/MergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/CompareVersionNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnings/practise/problems/leetcode/general/CompareVersionNumbers.java" afterDir="false" />
     </list>
     <list id="9a5c7d34-ab8e-414c-bc2d-24cf67b1235a" name="merge" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -326,11 +310,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1577148635867" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1582297687572">
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1582398062456">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579579854226" />
-    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582297687572" />
+    <state x="439" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1582398062456" />
     <state x="458" y="241" width="524" height="484" key="extract.method.dialog" timestamp="1580707684544">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -361,12 +345,12 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1576722120531" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1582391101191">
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup" timestamp="1582440268456">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581315486713" />
     <state x="513" y="235" width="894" height="812" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577498853701" />
-    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582391101191" />
+    <state x="385" y="214" width="670" height="659" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582440268456" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,9 +1,6 @@
 package com.learnings.practise.problems.leetcode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class BinaryTreeZigzagLevelOrderTraversal {
 
@@ -12,7 +9,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         boolean flip = true;
         List<List<Integer>> result = new ArrayList<>();
-        LinkedList<TreeNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         LinkedList<Integer> levelList = new LinkedList<>();
 
         if(null == root) {
@@ -20,18 +17,18 @@ public class BinaryTreeZigzagLevelOrderTraversal {
         }
 
         //Adding a null to Track the Completion of Level
-        queue.addLast(root);
-        queue.addLast(null);
+        queue.offer(root);
+        queue.offer(null);
 
         while(!queue.isEmpty()) {
-            TreeNode currentNode = queue.pollFirst();
+            TreeNode currentNode = queue.poll();
             if(currentNode != null) {
                 //If flip is true add to the last of the queue or else add to the first of the queue
-                if(flip) levelList.addLast(currentNode.val);
+                if(flip) levelList.offer(currentNode.val);
                 else levelList.addFirst(currentNode.val);
 
-                if(currentNode.left != null) queue.addLast(currentNode.left);
-                if(currentNode.right != null) queue.addLast(currentNode.right);
+                if(currentNode.left != null) queue.offer(currentNode.left);
+                if(currentNode.right != null) queue.offer(currentNode.right);
             } else {
                 flip = !flip;
                 result.add(levelList);
@@ -39,7 +36,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
 
                 //Adding null as a level completion identifier
                 if(!queue.isEmpty()) {
-                    queue.addLast(null);
+                    queue.offer(null);
                 }
             }
         }

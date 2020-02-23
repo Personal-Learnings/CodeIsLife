@@ -24,29 +24,31 @@ public class MergeTwoSortedLists {
      * Space Complexity: O(1) as there are no extra space used apart from the the node required for output
      **/
     public ListNode mergeTwoLists_iterative(ListNode l1, ListNode l2) {
+        ListNode currentNode1 = l1;
+        ListNode currentNode2 = l2;
 
-        if(l1 == null && l2 != null) return l2;
-        if(l2 == null && l1 != null) return l1;
+        ListNode dummyNode = new ListNode(0);
+        ListNode iteratorNode = dummyNode;
 
-        ListNode l1Iterator = l1;
-        ListNode l2Iterator = l2;
-        ListNode resultNode = new ListNode(0);
-        ListNode resultNodeIterator = resultNode;
-
-        while(l1Iterator != null || l2Iterator != null) {
-            int l1Val = (l1Iterator == null) ? Integer.MAX_VALUE : l1Iterator.val;
-            int l2Val = (l2Iterator == null) ? Integer.MAX_VALUE : l2Iterator.val;
-
-            if(l1Val < l2Val) {
-                resultNodeIterator.next = new ListNode(l1Val);
-                l1Iterator = l1Iterator.next;
+        while(currentNode1 != null || currentNode2 != null) {
+            if(currentNode1 != null && currentNode2 != null) {
+                if(currentNode1.val <= currentNode2.val) {
+                    iteratorNode.next = new ListNode(currentNode1.val);
+                    currentNode1 = currentNode1.next;
+                } else {
+                    iteratorNode.next = new ListNode(currentNode2.val);
+                    currentNode2 = currentNode2.next;
+                }
+            } else if(currentNode1 != null) {
+                iteratorNode.next = new ListNode(currentNode1.val);
+                currentNode1 = currentNode1.next;
             } else {
-                resultNodeIterator.next = new ListNode(l2Val);
-                l2Iterator = l2Iterator.next;
+                iteratorNode.next = new ListNode(currentNode2.val);
+                currentNode2 = currentNode2.next;
             }
-            resultNodeIterator = resultNodeIterator.next;
+            iteratorNode = iteratorNode.next;
         }
-        return resultNode.next;
+        return dummyNode.next;
     }
 
     static class ListNode {
