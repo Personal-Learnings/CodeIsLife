@@ -96,6 +96,7 @@ public class PrisonCellsAfterNDays {
     }
 
     public static void main(String[] args) {
+        System.out.println(Arrays.toString(new PrisonCellsAfterNDays().prisonAfterNDays(new int [] {0,1,0,1,1,0,0,1}, 19)));
         System.out.println(Arrays.toString(new PrisonCellsAfterNDays().prisonAfterNDays(new int [] {0,1,0,1,1,0,0,1}, 209)));
         System.out.println(Arrays.toString(new PrisonCellsAfterNDays().prisonAfterNDays(new int [] {0,1,0,1,1,0,0,1,1}, 200)));
         System.out.println(Arrays.toString(new PrisonCellsAfterNDays().prisonAfterNDays(new int [] {0,1,0,1,1,0,0,1,1,1}, 200)));
