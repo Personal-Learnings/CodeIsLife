@@ -11,6 +11,7 @@ public class IntegerToEnglishWords {
 
         StringBuilder result = new StringBuilder();
         int i = 0;
+        
         while(num > 0) {
             if(num % 1000 != 0) result.insert(0, getAsWord(num % 1000) + THOUSANDS[i] + " ");
             num /= 1000;
