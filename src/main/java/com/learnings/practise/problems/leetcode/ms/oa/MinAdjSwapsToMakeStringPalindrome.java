@@ -1,15 +1,12 @@
 package com.learnings.practise.problems.leetcode.ms.oa;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class MinAdjSwapsToMakeStringPalindrome {
 
     private List<String> combinationsForPrint;
 
     private int getNoOfSwaps(String s) {
-
         combinationsForPrint = new ArrayList<>();
 
         if(s == null || s.length() == 0) return -1;
@@ -61,6 +58,18 @@ public class MinAdjSwapsToMakeStringPalindrome {
         for (int value : occurrence) if (value % 2 != 0) oddCount++;
         return oddCount <= 1;
     }
+
+    /** Another Alternative way to find Palindrome when chars are not has more than lowercase letters  **/
+    /*private static boolean isShuffledPalindrome(String s){
+        if(s == null || s.length() <= 1) return true;
+
+        Set<Character> set = new HashSet<>();
+        for(char c : s.toCharArray()) {
+            if(set.contains(c)) set.remove(c);
+            else set.add(c);
+        }
+        return set.size() <= 1;
+    }*/
 
     public static void main(String[] args) {
         MinAdjSwapsToMakeStringPalindrome minAdjSwapsToMakeStringPalindrome = new MinAdjSwapsToMakeStringPalindrome();
